@@ -1,0 +1,88 @@
+@charset "utf-8";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 16px;
+  overflow: hidden;
+  background: #d4d4d4 url("../images/palloi-css-conference.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+.ph-welcome {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.ph-title {
+  color: rgba(0, 0, 0, .6);
+  font-weight: bold;
+  font-size: 3em;
+  letter-spacing: -1px;
+  text-transform: uppercase;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, .5);
+  padding: 0 0 20px;
+  margin: 0;
+}
+
+.ph-list {
+  list-style: none;
+}
+
+.ph-list-item {
+  font-size: 1em;
+  margin: 0 0 10px;
+}
+
+.ph-list-item:before,
+.ph-list-item:after {
+  opacity: .8;
+  padding: 6px;
+  font-style: normal;
+  position: relative;
+  content: "•";
+}
+  
+.ph-link {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.ph-link:hover {
+  color: #666;
+}
+
+.ph-welcome {
+  -webkit-animation-name: welcome;
+  -webkit-animation-duration: .9s; }
+
+@-webkit-keyframes welcome {
+  from {
+    -webkit-transform: scale(0) translate(-50%, -50%);
+    opacity: 0;
+  }
+  50% {
+   -webkit-transform: scale(0) translate(-50%, -50%);
+   opacity: 0;
+  }
+  82.5% {
+    -webkit-transform: scale(1.03) translate(-50%, -50%);
+    -webkit-animation-timing-function: ease-out;
+    opacity: 1;
+  }
+  to {
+    -webkit-transform: scale(1) translate(-50%, -50%);
+  }
+}

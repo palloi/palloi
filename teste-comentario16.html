@@ -52,8 +52,11 @@
     <div id="fb-root"></div>
     <script>
       var fbComments = document.getElementsByClassName('fb-comments');
-      for (var i = 0; fbComments.lenght < i; i++) {
+      for (var i = 0; i < fbComments.length; i++) {
+        console.log(location.origin + location.pathname)
+        console.log(fbComments[i])
         fbComments[i].dataset.href = location.origin + location.pathname
+        console.log(fbComments[i])
       }
 
       (function(d, s, id) {

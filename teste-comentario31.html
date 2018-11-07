@@ -61,8 +61,8 @@
       module.init = function init() {
         setUrlComment();
 
-        if ($('#fb-root').length == 0) {
-          $('body').append('<div id="fb-root"></div>');
+        // if ($('#fb-root').length == 0) {
+        //   $('body').append('<div id="fb-root"></div>');
 
           (function(d, s, id) {
             var js, fjs = d.getElementsByTagName(s)[0];
@@ -72,7 +72,7 @@
                      '#xfbml=1&version=v2.10';
             fjs.parentNode.insertBefore(js, fjs);
           }(document, 'script', 'facebook-jssdk'));
-        }
+        // }
       };
 
       module.refresh = function refresh() {

@@ -57,18 +57,42 @@
 
     <div id="fb-root"></div>
     <script>
-      var fbComments = document.getElementsByClassName('fb-comments');
-      for (var i = 0; i < fbComments.length; i++) {
-        fbComments[i].dataset.href = location.origin + location.pathname
+      var facebookComment = (function facebookComment(module) {
+      module.init = function init() {
+        setUrlComment();
+
+        if ($('#fb-root').length == 0) {
+          $('body').append('<div id="fb-root"></div>');
+
+          (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/pt_BR/sdk.js' +
+                     '#xfbml=1&version=v2.10';
+            fjs.parentNode.insertBefore(js, fjs);
+          }(document, 'script', 'facebook-jssdk'));
+        }
+      };
+
+      module.refresh = function refresh() {
+        setUrlComment();
+        FB.XFBML.parse();
+      };
+
+      function setUrlComment() {
+        var fbComments = document.getElementsByClassName('fb-comments');
+
+        for (var i = 0; i < fbComments.length; i++) {
+          fbComments[i].dataset.href = location.origin + location.pathname
+        }
       }
 
-      (function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = 'https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.10';
-        fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));</script>
+      return module;
+    })({});
+
+      document.onload = facebookComment.init;
+    </script>
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

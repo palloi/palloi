@@ -1,61 +1,515 @@
 <!doctype html>
-<html>
+<html lang="pt-BR">
   <head>
-    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="index,follow">
-    
-    <title>Palloi Hofmann - Desenvolvedor front-end e back-end</title>
-    <meta name="description" content="Palloi Hofmann - Desenvolvedor front-end desde 2007, co-fundador da produtora CSS4HTML e já atuou por diversas agências, e hoje faz parte do time de front-end de Produtos da locaweb.">
-    <meta name="keywords" content="css4html, css+for+html, css 4 html, css4, css4 html, css, css3, html, html5, parallax, frontend, backend, rails, ruby, rubyonrails, php, c#, dotnet, linux, windows, facebook, mobile, chrome, firefox, internet" />
+    <meta name="theme-color" content="#0c0b0a">
+    <title>Palloi Hofmann — Tech Manager, Tech Lead e Developer</title>
+    <meta name="description" content="Palloi Hofmann é um profissional T-shaped, especialista em front-end, com trajetória em liderança técnica, gestão de pessoas e desenvolvimento de software.">
+    <link rel="canonical" href="https://palloi.com.br/">
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 
-    <meta name="og:title" content="Palloi Hofmann - Desenvolvedor front-end e back-end" />
-    <meta property="og:image" content="http://palloi.com.br/assets/images/palloi-css-conference.jpg" />
-    <meta property="og:keywords" content="css4html, css+for+html, css 4 html, css4, css4 html, css, css3, html, html5, parallax, frontend, backend, rails, ruby, rubyonrails, php, c#, dotnet, linux, windows, facebook, mobile, chrome, firefox, internet" />
-    <meta property="og:description" content="Palloi Hofmann - Desenvolvedor front-end desde 2007, co-fundador da produtora CSS4HTML e já atuou por diversas agências, e hoje faz parte do time de front-end de Produtos da locaweb." />
-    <meta property="og:url" content="http://palloi.com.br/" />
-    <meta property="fb:admins" content="10155799505077445"/>
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:locale:alternate" content="en_US">
+    <meta property="og:title" content="Palloi Hofmann — Tech Manager, Tech Lead e Developer">
+    <meta property="og:description" content="Palloi Hofmann é um profissional T-shaped, especialista em front-end, com trajetória em liderança técnica, gestão de pessoas e desenvolvimento de software.">
+    <meta property="og:url" content="https://palloi.com.br/">
+    <meta name="twitter:card" content="summary">
 
-    <link rel="canonical" href="http://palloi.com.br/" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400;0,500;0,600;0,700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+      @theme {
+        --font-sans: "Instrument Sans", ui-sans-serif, system-ui, sans-serif;
+        --font-serif: "Instrument Serif", ui-serif, Georgia, serif;
+        --color-ink: #0c0b0a;
+        --color-ink-soft: #161412;
+        --color-paper: #f3eee6;
+        --color-mute: #b5ada3;
+        --color-line: #2c2824;
+        --color-copper: #e0b56a;
+        --color-copper-dim: #b8893d;
+      }
+    </style>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
 
-    <link rel="shortcut icon" href="http://css4html.com.br/favicon.ico" type="image/x-icon">
-    
-    <link href="/assets/stylesheets/all.css" rel="stylesheet" type="text/css" />
+      body {
+        background-color: #0c0b0a;
+        color: #f3eee6;
+      }
 
-  </head>
-  
-  <body>
-    <div class="ph-welcome">
-  <h1 class="ph-title">Palloi Hofmann</h1>
-  <ul class="ph-list">
-    <li class="ph-list-item">
-      <a href="https://twitter.com/palloi" class="ph-link" target="_blank">twitter</a>
-    </li>
-    <li class="ph-list-item">
-      <a href="https://www.facebook.com/palloi" class="ph-link" target="_blank">facebook</a>
-    </li>
-    <li class="ph-list-item">
-      <a href="https://instagram.com/palloi/" class="ph-link" target="_blank">instagram</a>
-    </li>
-    <li class="ph-list-item">
-      <a href="http://tableless.com.br/author/palloi/" class="ph-link" target="_blank">artigos</a>
-    </li>
-  </ul>
-</div>
+      body::before {
+        content: "";
+        position: fixed;
+        inset: 0;
+        pointer-events: none;
+        z-index: 40;
+        opacity: 0.045;
+        background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+      }
 
+      ::selection {
+        background: #e0b56a;
+        color: #0c0b0a;
+      }
 
-    <script src="/assets/javascripts/all.js" type="text/javascript"></script>
+      a, button {
+        outline: none;
+      }
 
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      a:focus-visible,
+      button:focus-visible {
+        outline: 2px solid #e0b56a;
+        outline-offset: 3px;
+      }
 
-      ga('create', 'UA-64779000-1', 'auto');
-      ga('send', 'pageview');
+      [data-lang-set].is-active {
+        color: #0c0b0a;
+        background: #e0b56a;
+      }
 
+      [data-nav-link].is-current {
+        color: #e0b56a;
+      }
+
+      [data-reveal] {
+        opacity: 0;
+        transform: translateY(18px);
+        transition: opacity 0.7s ease, transform 0.7s ease;
+      }
+
+      [data-reveal].is-visible {
+        opacity: 1;
+        transform: none;
+      }
+
+      body.menu-open {
+        overflow: hidden;
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        html {
+          scroll-behavior: auto;
+        }
+
+        [data-reveal] {
+          opacity: 1;
+          transform: none;
+          transition: none;
+        }
+      }
+    </style>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Palloi Hofmann",
+        "jobTitle": "Software Engineer",
+        "url": "https://palloi.com.br/",
+        "email": "mailto:palloi.hofmann@gmail.com",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Caçapava",
+          "addressRegion": "São Paulo",
+          "addressCountry": "BR"
+        },
+        "sameAs": [
+          "https://www.linkedin.com/in/palloi",
+          "https://github.com/palloi"
+        ]
+      }
     </script>
+  </head>
+  <body class="font-sans antialiased bg-ink text-paper">
+    <a href="#conteudo" class="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-50 focus:bg-copper focus:text-ink focus:px-4 focus:py-2 focus:rounded-full" data-i18n="skip">Ir para o conteúdo</a>
+
+    <header class="sticky top-0 z-30 border-b border-line/80 bg-ink/80 backdrop-blur-md">
+      <div class="mx-auto flex max-w-6xl items-center justify-between gap-4 px-5 py-4 md:px-8">
+        <a href="#topo" class="font-serif text-lg tracking-tight text-paper md:text-xl">Palloi Hofmann</a>
+
+        <nav class="hidden items-center gap-7 text-sm text-mute md:flex" aria-label="Principal">
+          <a href="#sobre" class="transition hover:text-paper" data-nav-link data-i18n="nav.about">Sobre</a>
+          <a href="#experiencia" class="transition hover:text-paper" data-nav-link data-i18n="nav.experience">Experiência</a>
+          <a href="#competencias" class="transition hover:text-paper" data-nav-link data-i18n="nav.skills">Competências</a>
+          <a href="#escrita" class="transition hover:text-paper" data-nav-link data-i18n="nav.writing">Escrita</a>
+          <a href="#contato" class="transition hover:text-paper" data-nav-link data-i18n="nav.contact">Contato</a>
+        </nav>
+
+        <div class="flex items-center gap-3">
+          <div class="inline-flex rounded-full border border-line p-0.5 text-xs font-medium" role="group" data-i18n-aria="lang.label" aria-label="Idioma">
+            <button type="button" class="rounded-full px-2.5 py-1 text-mute transition hover:text-paper" data-lang-set="pt" aria-pressed="true">PT</button>
+            <button type="button" class="rounded-full px-2.5 py-1 text-mute transition hover:text-paper" data-lang-set="en" aria-pressed="false">EN</button>
+          </div>
+          <button
+            type="button"
+            class="inline-flex h-10 w-10 items-center justify-center rounded-full border border-line text-paper md:hidden"
+            data-menu-toggle
+            aria-expanded="false"
+            aria-controls="menu-mobile"
+            data-i18n-aria="nav.open"
+            aria-label="Abrir menu"
+          >
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
+              <path d="M3 5h12M3 9h12M3 13h12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <div id="menu-mobile" class="hidden border-t border-line bg-ink px-5 py-5 md:hidden" data-menu-panel>
+        <nav class="flex flex-col gap-4 text-lg" aria-label="Mobile">
+          <a href="#sobre" data-i18n="nav.about">Sobre</a>
+          <a href="#experiencia" data-i18n="nav.experience">Experiência</a>
+          <a href="#competencias" data-i18n="nav.skills">Competências</a>
+          <a href="#escrita" data-i18n="nav.writing">Escrita</a>
+          <a href="#contato" data-i18n="nav.contact">Contato</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="conteudo">
+      <section id="topo" class="mx-auto max-w-6xl px-5 pb-20 pt-16 md:px-8 md:pb-28 md:pt-24">
+        <p class="text-sm uppercase tracking-[0.22em] text-copper" data-i18n="hero.location">Caçapava, São Paulo, Brasil</p>
+        <h1 class="mt-5 max-w-4xl font-serif text-5xl leading-[1.05] text-paper sm:text-6xl md:text-7xl lg:text-8xl">Palloi Hofmann</h1>
+        <p class="mt-6 max-w-2xl text-lg text-mute md:text-xl" data-i18n="hero.role">Tech Manager — Tech Lead — Developer</p>
+        <p class="mt-6 max-w-2xl text-base leading-relaxed text-paper/90 md:text-lg" data-i18n="hero.lead">
+          Profissional T-shaped, especialista em front-end, com back-end, liderança técnica e gestão de pessoas. Quase duas décadas construindo produtos e times de engenharia.
+        </p>
+        <div class="mt-10 flex flex-wrap items-center gap-3">
+          <a href="mailto:palloi.hofmann@gmail.com" class="inline-flex items-center rounded-full bg-copper px-5 py-2.5 text-sm font-semibold text-ink transition hover:bg-copper-dim" data-i18n="hero.email">Escrever</a>
+          <a href="https://www.linkedin.com/in/palloi" class="inline-flex items-center rounded-full border border-line px-5 py-2.5 text-sm text-paper transition hover:border-copper hover:text-copper" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a href="https://github.com/palloi" class="inline-flex items-center rounded-full border border-line px-5 py-2.5 text-sm text-paper transition hover:border-copper hover:text-copper" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </div>
+        <dl class="mt-16 grid gap-6 border-t border-line pt-10 sm:grid-cols-3">
+          <div>
+            <dt class="font-serif text-3xl text-paper" data-i18n="stat.years">19+ anos</dt>
+            <dd class="mt-1 text-sm text-mute" data-i18n="stat.yearsLabel">em tecnologia</dd>
+          </div>
+          <div>
+            <dt class="font-serif text-3xl text-paper" data-i18n="stat.lead">Tech Lead & EM</dt>
+            <dd class="mt-1 text-sm text-mute" data-i18n="stat.leadLabel">liderança de times</dd>
+          </div>
+          <div>
+            <dt class="font-serif text-3xl text-paper" data-i18n="stat.stack">Design System</dt>
+            <dd class="mt-1 text-sm text-mute" data-i18n="stat.stackLabel">e web components</dd>
+          </div>
+        </dl>
+      </section>
+
+      <section id="sobre" class="scroll-mt-24 border-t border-line" data-reveal>
+        <div class="mx-auto grid max-w-6xl gap-10 px-5 py-20 md:grid-cols-[180px_1fr] md:px-8 md:py-24">
+          <div>
+            <p class="text-xs uppercase tracking-[0.22em] text-copper" data-i18n="about.kicker">Perfil</p>
+            <h2 class="mt-3 font-serif text-4xl" data-i18n="about.title">Sobre</h2>
+          </div>
+          <div class="max-w-2xl space-y-5 text-lg leading-relaxed text-paper/90">
+            <p data-i18n="about.p1">Olá. Sou um profissional T-shaped: especialista em front-end, com conhecimento sólido de back-end e uma trajetória em desenvolvimento de software, liderança técnica e gestão de pessoas.</p>
+            <p data-i18n="about.p2">Hoje atuo como Software Engineer na mLabs, depois de ciclos como Engineering Manager e Tech Lead. Já liderei times, desenhei design systems e entreguei produtos web em empresas como Onze, Locaweb e na produtora que fundei, a CSS4HTML.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="experiencia" class="scroll-mt-24 border-t border-line" data-reveal>
+        <div class="mx-auto max-w-6xl px-5 py-20 md:px-8 md:py-24">
+          <div class="mb-12 md:mb-16">
+            <p class="text-xs uppercase tracking-[0.22em] text-copper" data-i18n="exp.kicker">Carreira</p>
+            <h2 class="mt-3 font-serif text-4xl" data-i18n="exp.title">Experiência</h2>
+          </div>
+
+          <article class="grid gap-8 border-b border-line py-10 md:grid-cols-[220px_1fr] md:gap-12">
+            <div>
+              <h3 class="text-xl font-semibold">mLabs</h3>
+              <p class="mt-2 text-sm text-mute" data-i18n="exp.mlabs.period">2019–2021 · 2024–atual</p>
+              <p class="mt-4 inline-flex rounded-full border border-copper/40 px-3 py-1 text-xs uppercase tracking-wider text-copper" data-i18n="exp.current">Atual</p>
+            </div>
+            <div>
+              <ul class="space-y-5">
+                <li class="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between">
+                  <span data-i18n="exp.mlabs.r1.role">Software Engineer</span>
+                  <span class="text-sm text-mute" data-i18n="exp.mlabs.r1.dates">dez 2025 — atual</span>
+                </li>
+                <li class="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between">
+                  <span data-i18n="exp.mlabs.r2.role">Engineering Manager</span>
+                  <span class="text-sm text-mute" data-i18n="exp.mlabs.r2.dates">ago 2024 — dez 2025</span>
+                </li>
+                <li class="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between">
+                  <span data-i18n="exp.mlabs.r3.role">Software Engineer</span>
+                  <span class="text-sm text-mute" data-i18n="exp.mlabs.r3.dates">mai 2024 — ago 2024</span>
+                </li>
+                <li class="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between">
+                  <span data-i18n="exp.mlabs.r4.role">Engineer Team Lead</span>
+                  <span class="text-sm text-mute" data-i18n="exp.mlabs.r4.dates">nov 2020 — nov 2021</span>
+                </li>
+                <li class="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between">
+                  <span data-i18n="exp.mlabs.r5.role">Developer — Tech Lead</span>
+                  <span class="text-sm text-mute" data-i18n="exp.mlabs.r5.dates">jan 2019 — out 2020</span>
+                </li>
+              </ul>
+              <p class="mt-6 text-sm text-mute">React · Web Components · Design System · Node.js · Ruby · MongoDB · MySQL · PostgreSQL · Docker · GitHub Actions</p>
+            </div>
+          </article>
+
+          <article class="grid gap-8 border-b border-line py-10 md:grid-cols-[220px_1fr] md:gap-12">
+            <div>
+              <h3 class="text-xl font-semibold">Onze</h3>
+              <p class="mt-2 text-sm text-mute" data-i18n="exp.onze.period">2021 — 2024</p>
+            </div>
+            <ul class="space-y-5">
+              <li class="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between">
+                <span data-i18n="exp.onze.r1.role">Engineering Manager</span>
+                <span class="text-sm text-mute" data-i18n="exp.onze.r1.dates">fev 2024 — mar 2024</span>
+              </li>
+              <li class="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between">
+                <span data-i18n="exp.onze.r2.role">Front-end Developer</span>
+                <span class="text-sm text-mute" data-i18n="exp.onze.r2.dates">dez 2021 — mar 2024</span>
+              </li>
+            </ul>
+          </article>
+
+          <article class="grid gap-8 border-b border-line py-10 md:grid-cols-[220px_1fr] md:gap-12">
+            <div>
+              <h3 class="text-xl font-semibold">Locaweb</h3>
+              <p class="mt-2 text-sm text-mute" data-i18n="exp.locaweb.period">2012–2013 · 2015–2019</p>
+            </div>
+            <div>
+              <ul class="space-y-5">
+                <li class="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between">
+                  <span data-i18n="exp.locaweb.r1.role">Remote Developer</span>
+                  <span class="text-sm text-mute" data-i18n="exp.locaweb.r1.dates">mar 2015 — jan 2019</span>
+                </li>
+                <li class="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between">
+                  <span data-i18n="exp.locaweb.r2.role">Developer Front-end / Back-end</span>
+                  <span class="text-sm text-mute" data-i18n="exp.locaweb.r2.dates">jan 2012 — out 2013</span>
+                </li>
+              </ul>
+              <p class="mt-6 text-sm text-mute">HTML · CSS3 · JavaScript · jQuery · Ember.js · Ruby on Rails · Elixir · Sass · Less · Gulp · Grunt · C# · SAP</p>
+            </div>
+          </article>
+
+          <article class="grid gap-8 border-b border-line py-10 md:grid-cols-[220px_1fr] md:gap-12">
+            <div>
+              <h3 class="text-xl font-semibold">CSS4HTML</h3>
+              <p class="mt-2 text-sm text-mute" data-i18n="exp.css4html.period">2013 — 2019</p>
+            </div>
+            <div>
+              <div class="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between">
+                <span data-i18n="exp.css4html.role">Founder e Developer Front-end / Back-end</span>
+                <span class="text-sm text-mute" data-i18n="exp.css4html.dates">nov 2013 — jan 2019</span>
+              </div>
+              <p class="mt-6 text-sm text-mute">HTML · CSS3 · JavaScript · jQuery · AngularJS · Node.js · Ruby on Rails · C# · PHP</p>
+            </div>
+          </article>
+
+          <article class="grid gap-8 py-10 md:grid-cols-[220px_1fr] md:gap-12">
+            <div>
+              <h3 class="text-xl font-semibold" data-i18n="exp.earlier.title">Início de carreira</h3>
+            </div>
+            <ul class="space-y-5 text-sm sm:text-base">
+              <li class="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between">
+                <span><span data-i18n="exp.cubocc.role">Front-end</span> · CUBOCC</span>
+                <span class="text-mute" data-i18n="exp.cubocc.dates">fev 2011 — jan 2012</span>
+              </li>
+              <li class="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between">
+                <span><span data-i18n="exp.adbrazil.role">Front-end / Back-end</span> · AD.BRAZIL</span>
+                <span class="text-mute" data-i18n="exp.adbrazil.dates">nov 2010 — fev 2011</span>
+              </li>
+              <li class="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between">
+                <span><span data-i18n="exp.neotix.role">Front-end</span> · Neotix Interactive Agency</span>
+                <span class="text-mute" data-i18n="exp.neotix.dates">mar 2010 — nov 2010</span>
+              </li>
+              <li class="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between">
+                <span><span data-i18n="exp.interactive.role">Front-end / Back-end</span> · Interactive — Grupo Focusnetworks</span>
+                <span class="text-mute" data-i18n="exp.interactive.dates">abr 2007 — mar 2010</span>
+              </li>
+              <li class="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between">
+                <span><span data-i18n="exp.inpe.role">Estagiário</span> · INPE</span>
+                <span class="text-mute" data-i18n="exp.inpe.dates">out 2006 — mar 2007</span>
+              </li>
+              <li class="text-sm text-mute" data-i18n="exp.inpe.note">Onde a carreira profissional começou.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="competencias" class="scroll-mt-24 border-t border-line" data-reveal>
+        <div class="mx-auto max-w-6xl px-5 py-20 md:px-8 md:py-24">
+          <div class="mb-12">
+            <p class="text-xs uppercase tracking-[0.22em] text-copper" data-i18n="skills.kicker">Ferramentas</p>
+            <h2 class="mt-3 font-serif text-4xl" data-i18n="skills.title">Competências</h2>
+          </div>
+          <div class="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
+            <div>
+              <h3 class="mb-4 text-sm uppercase tracking-[0.18em] text-copper" data-i18n="skills.frontend">Front-end</h3>
+              <ul class="space-y-2 text-paper/90">
+                <li>HTML, CSS, JavaScript</li>
+                <li>React</li>
+                <li>Web Components</li>
+                <li>Design System</li>
+                <li>Ember.js</li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="mb-4 text-sm uppercase tracking-[0.18em] text-copper" data-i18n="skills.backend">Back-end</h3>
+              <ul class="space-y-2 text-paper/90">
+                <li>Node.js</li>
+                <li>Ruby on Rails</li>
+                <li>Elixir</li>
+                <li>MongoDB, MySQL, PostgreSQL</li>
+                <li>PHP, C#</li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="mb-4 text-sm uppercase tracking-[0.18em] text-copper" data-i18n="skills.leadership">Liderança</h3>
+              <ul class="space-y-2 text-paper/90">
+                <li>Engineering Management</li>
+                <li>Tech Lead</li>
+                <li data-i18n="skills.people">Gestão de pessoas</li>
+                <li data-i18n="skills.feedback">Feedback e feedforward</li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="mb-4 text-sm uppercase tracking-[0.18em] text-copper" data-i18n="skills.practices">Práticas</h3>
+              <ul class="space-y-2 text-paper/90">
+                <li data-i18n="skills.github">GitHub e GitHub Actions</li>
+                <li>Docker</li>
+                <li>Agile, Scrum, Kanban</li>
+                <li data-i18n="skills.english">Inglês</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="formacao" class="scroll-mt-24 border-t border-line" data-reveal>
+        <div class="mx-auto grid max-w-6xl gap-16 px-5 py-20 md:grid-cols-2 md:px-8 md:py-24">
+          <div>
+            <p class="text-xs uppercase tracking-[0.22em] text-copper" data-i18n="edu.kicker">Estudos</p>
+            <h2 class="mt-3 font-serif text-4xl" data-i18n="edu.title">Formação</h2>
+            <ul class="mt-10 space-y-8">
+              <li>
+                <p class="text-lg font-medium">FIAP</p>
+                <p class="text-paper/90" data-i18n="edu.fiap.degree">CST em Gestão da Tecnologia da Informação</p>
+                <p class="mt-1 text-sm text-mute"><span data-i18n="edu.fiap.dates">ago 2025 — ago 2027</span> · <span data-i18n="edu.fiap.status">Em andamento</span></p>
+              </li>
+              <li>
+                <p class="text-lg font-medium" data-i18n="edu.systems.school">Superior incompleto</p>
+                <p class="text-paper/90" data-i18n="edu.systems.degree">Análise de Sistemas de Computação</p>
+                <p class="mt-1 text-sm text-mute" data-i18n="edu.systems.dates">2006 — 2008</p>
+              </li>
+              <li>
+                <p class="text-lg font-medium">Microcamp</p>
+                <p class="text-paper/90" data-i18n="edu.microcamp.degree">Web Designer, Informática</p>
+                <p class="mt-1 text-sm text-mute" data-i18n="edu.microcamp.dates">2002 — 2003</p>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <p class="text-xs uppercase tracking-[0.22em] text-copper" data-i18n="certs.issuer">Escola Conquer</p>
+            <h2 class="mt-3 font-serif text-4xl" data-i18n="certs.title">Certificações</h2>
+            <ul class="mt-10 space-y-8">
+              <li>
+                <p class="text-lg font-medium" data-i18n="certs.c1">Escutatória</p>
+                <p class="mt-1 text-sm text-mute" data-i18n="certs.c1.dates">jun 2025</p>
+                <a class="mt-2 inline-block text-sm text-copper hover:underline" href="https://conquerplus.com.br/certificates/b1e70391-43a6-42d1-a38a-c4c63f71ac0b" target="_blank" rel="noopener noreferrer" data-i18n="certs.view">Ver certificado</a>
+              </li>
+              <li>
+                <p class="text-lg font-medium" data-i18n="certs.c2">Feedback e Feedforward: transforme conversas difíceis em resultados</p>
+                <p class="mt-1 text-sm text-mute" data-i18n="certs.c2.dates">jan 2025</p>
+                <a class="mt-2 inline-block text-sm text-copper hover:underline" href="https://conquerplus.com.br/certificates/5f6e0954-6c2f-4ba5-8895-0cc4b9e286b0" target="_blank" rel="noopener noreferrer" data-i18n="certs.view">Ver certificado</a>
+              </li>
+              <li>
+                <p class="text-lg font-medium" data-i18n="certs.c3">FOCO: habilidades essenciais para desbloquear seu potencial</p>
+                <p class="mt-1 text-sm text-mute" data-i18n="certs.c3.dates">jan 2025</p>
+                <a class="mt-2 inline-block text-sm text-copper hover:underline" href="https://conquerplus.com.br/certificates/9863e58f-d6c7-45dc-ab7e-ecaf16efbd4c" target="_blank" rel="noopener noreferrer" data-i18n="certs.view">Ver certificado</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="escrita" class="scroll-mt-24 border-t border-line" data-reveal>
+        <div class="mx-auto max-w-6xl px-5 py-20 md:px-8 md:py-24">
+          <div class="mb-12">
+            <p class="text-xs uppercase tracking-[0.22em] text-copper" data-i18n="writing.kicker">Publicações</p>
+            <h2 class="mt-3 font-serif text-4xl" data-i18n="writing.title">Escrita e projetos</h2>
+          </div>
+          <div class="grid gap-6 md:grid-cols-2">
+            <a class="group rounded-2xl border border-line bg-ink-soft p-6 transition hover:border-copper/50" href="https://tableless.com.br/formulario-responsivo-com-mailchimp/" target="_blank" rel="noopener noreferrer">
+              <p class="text-xs uppercase tracking-[0.18em] text-mute" data-i18n="pub.outlet">Tableless</p>
+              <h3 class="mt-3 font-serif text-2xl group-hover:text-copper" data-i18n="pub1.title">Formulário responsivo com MailChimp</h3>
+              <p class="mt-3 text-sm leading-relaxed text-mute" data-i18n="pub1.desc">Como montar um formulário responsivo integrado ao MailChimp, com validação e envio via Ajax.</p>
+            </a>
+            <a class="group rounded-2xl border border-line bg-ink-soft p-6 transition hover:border-copper/50" href="https://tableless.com.br/destaques-responsivos/" target="_blank" rel="noopener noreferrer">
+              <p class="text-xs uppercase tracking-[0.18em] text-mute" data-i18n="pub.outlet">Tableless</p>
+              <h3 class="mt-3 font-serif text-2xl group-hover:text-copper" data-i18n="pub2.title">Destaques responsivos</h3>
+              <p class="mt-3 text-sm leading-relaxed text-mute" data-i18n="pub2.desc">Galeria navegável só com HTML e CSS, usando radio buttons e seletores.</p>
+            </a>
+            <a class="group rounded-2xl border border-line bg-ink-soft p-6 transition hover:border-copper/50" href="https://tableless.com.br/header-responsivo-somente-com-css/" target="_blank" rel="noopener noreferrer">
+              <p class="text-xs uppercase tracking-[0.18em] text-mute" data-i18n="pub.outlet">Tableless</p>
+              <h3 class="mt-3 font-serif text-2xl group-hover:text-copper" data-i18n="pub3.title">Header responsivo somente com CSS</h3>
+              <p class="mt-3 text-sm leading-relaxed text-mute" data-i18n="pub3.desc">Menu responsivo sem JavaScript, com checkbox, :checked e o seletor irmão.</p>
+            </a>
+            <a class="group rounded-2xl border border-line bg-ink-soft p-6 transition hover:border-copper/50" href="https://tableless.com.br/simples-modal-com-css-responsivo/" target="_blank" rel="noopener noreferrer">
+              <p class="text-xs uppercase tracking-[0.18em] text-mute" data-i18n="pub.outlet">Tableless</p>
+              <h3 class="mt-3 font-serif text-2xl group-hover:text-copper" data-i18n="pub4.title">Simples modal com CSS responsivo</h3>
+              <p class="mt-3 text-sm leading-relaxed text-mute" data-i18n="pub4.desc">Modal acessível via CSS, reaproveitando a mesma ideia do header responsivo.</p>
+            </a>
+            <a class="group rounded-2xl border border-line bg-ink-soft p-6 transition hover:border-copper/50 md:col-span-2" href="https://locaweb.github.io/locawebstyle/" target="_blank" rel="noopener noreferrer">
+              <p class="text-xs uppercase tracking-[0.18em] text-mute">Open source</p>
+              <h3 class="mt-3 font-serif text-2xl group-hover:text-copper" data-i18n="project.locaweb">Locaweb Style</h3>
+              <p class="mt-3 max-w-3xl text-sm leading-relaxed text-mute" data-i18n="project.locaweb.desc">Framework open source de interface para padronizar visual e comportamento dos produtos Locaweb.</p>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section id="depoimentos" class="scroll-mt-24 border-t border-line" data-reveal>
+        <div class="mx-auto max-w-6xl px-5 py-20 md:px-8 md:py-24">
+          <div class="mb-12">
+            <p class="text-xs uppercase tracking-[0.22em] text-copper" data-i18n="quotes.kicker">Quem trabalhou junto</p>
+            <h2 class="mt-3 font-serif text-4xl" data-i18n="quotes.title">Depoimentos</h2>
+          </div>
+          <div class="grid gap-8 md:grid-cols-2">
+            <blockquote class="rounded-2xl border border-line p-6 md:p-8">
+              <p class="font-serif text-xl leading-relaxed text-paper/95" data-i18n="quote.felippe">Um dos melhores tech leads com quem já trabalhei. Palloi é o tipo de líder que realmente vive o time — responsável por uma cultura horizontal com excelência nas entregas, e com uma visão sênior de todo o processo de desenvolvimento.</p>
+              <footer class="mt-6 text-sm text-mute">Felippe Regazio</footer>
+            </blockquote>
+            <blockquote class="rounded-2xl border border-line p-6 md:p-8">
+              <p class="font-serif text-xl leading-relaxed text-paper/95" data-i18n="quote.diego">Um dos melhores front-ends com que já trabalhei. Conhece bem JavaScript de interface e de lógica, além de se aprofundar em back-end como Ruby e Elixir. É um exemplo de profissional T-shaped, com o lado empreendedor que poucos têm.</p>
+              <footer class="mt-6 text-sm text-mute">Diego Eis</footer>
+            </blockquote>
+          </div>
+        </div>
+      </section>
+
+      <section id="contato" class="scroll-mt-24 border-t border-line" data-reveal>
+        <div class="mx-auto max-w-6xl px-5 py-20 md:px-8 md:py-28">
+          <p class="text-xs uppercase tracking-[0.22em] text-copper" data-i18n="contact.kicker">Contato</p>
+          <h2 class="mt-3 max-w-2xl font-serif text-5xl md:text-6xl" data-i18n="contact.title">Vamos conversar</h2>
+          <p class="mt-6 max-w-xl text-lg text-mute" data-i18n="contact.lead">Para oportunidades, parcerias ou uma conversa sobre produto e engenharia, me escreva ou chame no LinkedIn.</p>
+          <div class="mt-10 flex flex-wrap gap-3">
+            <a href="mailto:palloi.hofmann@gmail.com" class="inline-flex items-center rounded-full bg-copper px-5 py-2.5 text-sm font-semibold text-ink transition hover:bg-copper-dim">palloi.hofmann@gmail.com</a>
+            <a href="https://www.linkedin.com/in/palloi" class="inline-flex items-center rounded-full border border-line px-5 py-2.5 text-sm transition hover:border-copper hover:text-copper" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="https://github.com/palloi" class="inline-flex items-center rounded-full border border-line px-5 py-2.5 text-sm transition hover:border-copper hover:text-copper" target="_blank" rel="noopener noreferrer">GitHub</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="scroll-mt-24 border-t border-line">
+      <div class="mx-auto flex max-w-6xl flex-col gap-3 px-5 py-8 text-sm text-mute md:flex-row md:items-center md:justify-between md:px-8">
+        <p><span data-year>2026</span> · <span data-i18n="footer.copy">Palloi Hofmann. Caçapava, São Paulo.</span></p>
+        <p>palloi.com.br</p>
+      </div>
+    </footer>
+
+    <script src="assets/js/site.js" defer></script>
   </body>
 </html>

@@ -111,7 +111,7 @@
         "@context": "https://schema.org",
         "@type": "Person",
         "name": "Palloi Hofmann",
-        "jobTitle": "Software Engineer",
+        "jobTitle": "Tech Manager, Tech Lead, Developer",
         "url": "https://palloi.com.br/",
         "email": "mailto:palloi.hofmann@gmail.com",
         "address": {
@@ -134,10 +134,11 @@
       <div class="mx-auto flex max-w-6xl items-center justify-between gap-4 px-5 py-4 md:px-8">
         <a href="#topo" class="font-serif text-lg tracking-tight text-paper md:text-xl">Palloi Hofmann</a>
 
-        <nav class="hidden items-center gap-7 text-sm text-mute md:flex" aria-label="Principal">
+        <nav class="hidden items-center gap-5 text-sm text-mute lg:gap-7 md:flex" aria-label="Principal">
           <a href="#sobre" class="transition hover:text-paper" data-nav-link data-i18n="nav.about">Sobre</a>
           <a href="#experiencia" class="transition hover:text-paper" data-nav-link data-i18n="nav.experience">Experiência</a>
           <a href="#competencias" class="transition hover:text-paper" data-nav-link data-i18n="nav.skills">Competências</a>
+          <a href="#projetos" class="transition hover:text-paper" data-nav-link data-i18n="nav.projects">Projetos</a>
           <a href="#escrita" class="transition hover:text-paper" data-nav-link data-i18n="nav.writing">Escrita</a>
           <a href="#contato" class="transition hover:text-paper" data-nav-link data-i18n="nav.contact">Contato</a>
         </nav>
@@ -168,6 +169,7 @@
           <a href="#sobre" data-i18n="nav.about">Sobre</a>
           <a href="#experiencia" data-i18n="nav.experience">Experiência</a>
           <a href="#competencias" data-i18n="nav.skills">Competências</a>
+          <a href="#projetos" data-i18n="nav.projects">Projetos</a>
           <a href="#escrita" data-i18n="nav.writing">Escrita</a>
           <a href="#contato" data-i18n="nav.contact">Contato</a>
         </nav>
@@ -211,7 +213,7 @@
           </div>
           <div class="max-w-2xl space-y-5 text-lg leading-relaxed text-paper/90">
             <p data-i18n="about.p1">Olá. Sou um profissional T-shaped: especialista em front-end, com conhecimento sólido de back-end e uma trajetória em desenvolvimento de software, liderança técnica e gestão de pessoas.</p>
-            <p data-i18n="about.p2">Hoje atuo como Software Engineer na mLabs, depois de ciclos como Engineering Manager e Tech Lead. Já liderei times, desenhei design systems e entreguei produtos web em empresas como Onze, Locaweb e na produtora que fundei, a CSS4HTML.</p>
+            <p data-i18n="about.p2">Recentemente encerrei um ciclo como Software Engineer na mLabs, depois de passagens como Engineering Manager e Tech Lead. Já liderei times, desenhei design systems e entreguei produtos web em empresas como Onze, Locaweb e na produtora que fundei, a CSS4HTML.</p>
           </div>
         </div>
       </section>
@@ -226,14 +228,13 @@
           <article class="grid gap-8 border-b border-line py-10 md:grid-cols-[220px_1fr] md:gap-12">
             <div>
               <h3 class="text-xl font-semibold">mLabs</h3>
-              <p class="mt-2 text-sm text-mute" data-i18n="exp.mlabs.period">2019–2021 · 2024–atual</p>
-              <p class="mt-4 inline-flex rounded-full border border-copper/40 px-3 py-1 text-xs uppercase tracking-wider text-copper" data-i18n="exp.current">Atual</p>
+              <p class="mt-2 text-sm text-mute" data-i18n="exp.mlabs.period">2019–2021 · 2024–2026</p>
             </div>
             <div>
               <ul class="space-y-5">
                 <li class="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between">
                   <span data-i18n="exp.mlabs.r1.role">Software Engineer</span>
-                  <span class="text-sm text-mute" data-i18n="exp.mlabs.r1.dates">dez 2025 — atual</span>
+                  <span class="text-sm text-mute" data-i18n="exp.mlabs.r1.dates">dez 2025 — set 2026</span>
                 </li>
                 <li class="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between">
                   <span data-i18n="exp.mlabs.r2.role">Engineering Manager</span>
@@ -434,11 +435,34 @@
         </div>
       </section>
 
+      <section id="projetos" class="scroll-mt-24 border-t border-line" data-reveal>
+        <div class="mx-auto max-w-6xl px-5 py-20 md:px-8 md:py-24">
+          <div class="mb-12">
+            <p class="text-xs uppercase tracking-[0.22em] text-copper" data-i18n="projects.kicker">Produtos</p>
+            <h2 class="mt-3 font-serif text-4xl" data-i18n="projects.title">Projetos pessoais</h2>
+          </div>
+          <div class="grid gap-6 md:grid-cols-2">
+            <a class="group flex flex-col rounded-2xl border border-line bg-ink-soft p-6 transition hover:border-copper/50 md:p-8" href="https://bot.palloi.com.br" target="_blank" rel="noopener noreferrer">
+              <p class="text-xs uppercase tracking-[0.18em] text-mute" data-i18n="projects.personal">Projeto pessoal</p>
+              <h3 class="mt-3 font-serif text-3xl group-hover:text-copper">botPalloi</h3>
+              <p class="mt-3 flex-1 text-sm leading-relaxed text-mute" data-i18n="projects.bot.desc">Bot de entretenimento para livestreamers, com clipes, replay e ranque no chat. Mais de 1.500 cadastros.</p>
+              <p class="mt-6 text-sm text-copper">bot.palloi.com.br</p>
+            </a>
+            <a class="group flex flex-col rounded-2xl border border-line bg-ink-soft p-6 transition hover:border-copper/50 md:p-8" href="https://agilodonto.com.br" target="_blank" rel="noopener noreferrer">
+              <p class="text-xs uppercase tracking-[0.18em] text-mute" data-i18n="projects.personal">Projeto pessoal</p>
+              <h3 class="mt-3 font-serif text-3xl group-hover:text-copper">AgilOdonto</h3>
+              <p class="mt-3 flex-1 text-sm leading-relaxed text-mute" data-i18n="projects.agil.desc">Plataforma de gestão para clínicas odontológicas: agenda, pacientes e operação do consultório.</p>
+              <p class="mt-6 text-sm text-copper">agilodonto.com.br</p>
+            </a>
+          </div>
+        </div>
+      </section>
+
       <section id="escrita" class="scroll-mt-24 border-t border-line" data-reveal>
         <div class="mx-auto max-w-6xl px-5 py-20 md:px-8 md:py-24">
           <div class="mb-12">
             <p class="text-xs uppercase tracking-[0.22em] text-copper" data-i18n="writing.kicker">Publicações</p>
-            <h2 class="mt-3 font-serif text-4xl" data-i18n="writing.title">Escrita e projetos</h2>
+            <h2 class="mt-3 font-serif text-4xl" data-i18n="writing.title">Escrita</h2>
           </div>
           <div class="grid gap-6 md:grid-cols-2">
             <a class="group rounded-2xl border border-line bg-ink-soft p-6 transition hover:border-copper/50" href="https://tableless.com.br/formulario-responsivo-com-mailchimp/" target="_blank" rel="noopener noreferrer">

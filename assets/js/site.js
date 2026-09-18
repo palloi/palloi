@@ -17,7 +17,6 @@ const translations = {
     "hero.role": "Tech Manager — Tech Lead — Developer",
     "hero.lead":
       "Profissional T-shaped, especialista em front-end, com back-end, liderança técnica e gestão de pessoas. Quase duas décadas construindo produtos e times de engenharia.",
-    "hero.email": "Escrever",
     "stat.years": "19+ anos",
     "stat.yearsLabel": "em tecnologia",
     "stat.lead": "Tech Lead & EM",
@@ -125,7 +124,7 @@ const translations = {
     "contact.title": "Vamos conversar",
     "contact.kicker": "Contato",
     "contact.lead":
-      "Para oportunidades, parcerias ou uma conversa sobre produto e engenharia, me escreva ou chame no LinkedIn.",
+      "Para oportunidades, parcerias ou uma conversa sobre produto e engenharia, me chame no LinkedIn.",
     "footer.copy": "Palloi Hofmann. Caçapava, São Paulo.",
   },
   en: {
@@ -146,7 +145,6 @@ const translations = {
     "hero.role": "Tech Manager — Tech Lead — Developer",
     "hero.lead":
       "T-shaped professional. Front-end specialist with back-end experience, technical leadership, and people management. Almost two decades building products and engineering teams.",
-    "hero.email": "Email me",
     "stat.years": "19+ years",
     "stat.yearsLabel": "in technology",
     "stat.lead": "Tech Lead & EM",
@@ -254,7 +252,7 @@ const translations = {
     "contact.title": "Let's talk",
     "contact.kicker": "Contact",
     "contact.lead":
-      "For opportunities, partnerships, or a conversation about product and engineering, email me or reach out on LinkedIn.",
+      "For opportunities, partnerships, or a conversation about product and engineering, reach out on LinkedIn.",
     "footer.copy": "Palloi Hofmann. Caçapava, São Paulo.",
   },
 };

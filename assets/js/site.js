@@ -17,6 +17,12 @@ const translations = {
     "hero.role": "Tech Manager — Tech Lead — Developer",
     "hero.lead":
       "Profissional T-shaped, especialista em front-end, com back-end, liderança técnica e gestão de pessoas. Quase duas décadas construindo produtos e times de engenharia.",
+    "hero.tip.linkedin": "Perfil profissional no LinkedIn",
+    "hero.tip.instagram": "Instagram pessoal",
+    "hero.tip.github": "Repositórios e código no GitHub",
+    "hero.tip.bot": "Bot de entretenimento para livestreamers",
+    "hero.tip.agil": "Gestão para clínicas odontológicas",
+    "hero.tip.css4html": "Aprenda HTML, CSS e JavaScript com exemplos vivos",
     "stat.years": "19+ anos",
     "stat.yearsLabel": "em tecnologia",
     "stat.lead": "Tech Lead & EM",
@@ -165,6 +171,12 @@ const translations = {
     "hero.role": "Tech Manager — Tech Lead — Developer",
     "hero.lead":
       "T-shaped professional. Front-end specialist with back-end experience, technical leadership, and people management. Almost two decades building products and engineering teams.",
+    "hero.tip.linkedin": "Professional profile on LinkedIn",
+    "hero.tip.instagram": "Personal Instagram",
+    "hero.tip.github": "Repositories and code on GitHub",
+    "hero.tip.bot": "Entertainment bot for livestreamers",
+    "hero.tip.agil": "Practice management for dental clinics",
+    "hero.tip.css4html": "Learn HTML, CSS and JavaScript with live examples",
     "stat.years": "19+ years",
     "stat.yearsLabel": "in technology",
     "stat.lead": "Tech Lead & EM",
@@ -329,6 +341,10 @@ const applyTranslations = (lang) => {
   document.querySelectorAll("[data-i18n-aria]").forEach((el) => {
     const key = el.getAttribute("data-i18n-aria");
     if (t[key]) el.setAttribute("aria-label", t[key]);
+  });
+  document.querySelectorAll("[data-i18n-title]").forEach((el) => {
+    const key = el.getAttribute("data-i18n-title");
+    if (t[key]) el.setAttribute("title", t[key]);
   });
   setDocumentMeta(lang);
   document.querySelectorAll("[data-lang-set]").forEach((btn) => {

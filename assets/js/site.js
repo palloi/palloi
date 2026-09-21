@@ -13,6 +13,8 @@ const translations = {
     "nav.open": "Abrir menu",
     "nav.close": "Fechar menu",
     "lang.label": "Idioma",
+    "theme.toLight": "Ativar modo claro",
+    "theme.toDark": "Ativar modo escuro",
     "hero.location": "Caçapava, São Paulo, Brasil",
     "hero.role": "Tech Manager — Tech Lead — Developer",
     "hero.lead":
@@ -167,6 +169,8 @@ const translations = {
     "nav.open": "Open menu",
     "nav.close": "Close menu",
     "lang.label": "Language",
+    "theme.toLight": "Switch to light mode",
+    "theme.toDark": "Switch to dark mode",
     "hero.location": "Caçapava, São Paulo, Brazil",
     "hero.role": "Tech Manager — Tech Lead — Developer",
     "hero.lead":
@@ -310,6 +314,7 @@ const translations = {
 };
 
 const storageKey = "palloi-lang";
+const themeKey = "palloi-theme";
 const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
 const getLang = () => {
@@ -353,6 +358,37 @@ const applyTranslations = (lang) => {
     btn.classList.toggle("is-active", active);
   });
   localStorage.setItem(storageKey, lang);
+  syncThemeToggle();
+};
+
+const getTheme = () => document.documentElement.dataset.theme === "light" ? "light" : "dark";
+
+const applyTheme = (theme, persist = true) => {
+  document.documentElement.dataset.theme = theme;
+  if (persist) localStorage.setItem(themeKey, theme);
+  const color = getComputedStyle(document.documentElement).getPropertyValue("--theme-color").trim();
+  const themeColor = document.querySelector('meta[name="theme-color"]');
+  if (themeColor && color) themeColor.setAttribute("content", color);
+  syncThemeToggle();
+};
+
+const syncThemeToggle = () => {
+  const toggle = document.querySelector("[data-theme-toggle]");
+  if (!toggle) return;
+  const next = getTheme() === "dark" ? "toLight" : "toDark";
+  const label = translations[getLang()][`theme.${next}`];
+  toggle.setAttribute("aria-label", label);
+  toggle.setAttribute("title", label);
+  toggle.setAttribute("data-i18n-aria", `theme.${next}`);
+  toggle.setAttribute("data-i18n-title", `theme.${next}`);
+};
+
+const setupTheme = () => {
+  applyTheme(getTheme(), Boolean(localStorage.getItem(themeKey)));
+  const toggle = document.querySelector("[data-theme-toggle]");
+  if (toggle) {
+    toggle.addEventListener("click", () => applyTheme(getTheme() === "dark" ? "light" : "dark"));
+  }
 };
 
 const setupLanguage = () => {
@@ -447,6 +483,7 @@ const scrollToHash = () => {
 };
 
 setupLanguage();
+setupTheme();
 setupMenu();
 setupReveal();
 setupScrollSpy();

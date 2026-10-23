@@ -1,0 +1,409 @@
+<!doctype html>
+<html lang="pt-BR" data-doc="amb">
+  <head>
+    <meta charset="utf-8">
+    <script>
+      (() => {
+        const saved = localStorage.getItem("palloi-theme");
+        const theme = saved === "light" || saved === "dark"
+          ? saved
+          : (window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark");
+        document.documentElement.dataset.theme = theme;
+      })();
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="index,follow">
+    <meta name="theme-color" content="#0c0b0a">
+    <title>Ambiente de produto com time de IA — Palloi Hofmann</title>
+    <meta name="description" content="Consultoria para montar o seu ambiente de produto: repositório, deploy em staging e produção, time de agentes no Cursor e rotina de publicação. Pacotes a partir de R$ 1.200.">
+    <link rel="canonical" href="https://palloi.com.br/consultoria/">
+    <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:locale:alternate" content="en_US">
+    <meta property="og:title" content="Ambiente de produto com time de IA — Palloi Hofmann">
+    <meta property="og:description" content="Consultoria para montar o seu ambiente de produto: repositório, deploy em staging e produção, time de agentes no Cursor e rotina de publicação. Pacotes a partir de R$ 1.200.">
+    <meta property="og:url" content="https://palloi.com.br/consultoria/">
+    <meta name="twitter:card" content="summary">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400;0,500;0,600;0,700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+      @theme {
+        --font-sans: "Instrument Sans", ui-sans-serif, system-ui, sans-serif;
+        --font-serif: "Instrument Serif", ui-serif, Georgia, serif;
+        --color-ink: var(--ink);
+        --color-ink-soft: var(--ink-soft);
+        --color-paper: var(--paper);
+        --color-mute: var(--mute);
+        --color-line: var(--line);
+        --color-copper: var(--copper);
+        --color-copper-dim: var(--copper-dim);
+      }
+    </style>
+    <link rel="stylesheet" href="../assets/css/site.css">
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Ambiente de produto com time de IA",
+        "serviceType": "Consultoria de ambiente de desenvolvimento e publicação",
+        "description": "Montagem de repositório, deploy em staging e produção, time de agentes no Cursor e rotina de publicação automática, com contas no nome do cliente.",
+        "url": "https://palloi.com.br/consultoria/",
+        "inLanguage": "pt-BR",
+        "areaServed": "BR",
+        "provider": {
+          "@type": "Person",
+          "name": "Palloi Hofmann",
+          "url": "https://palloi.com.br/"
+        },
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Pacotes",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "name": "Mapa",
+              "description": "Sessão de 90 minutos com inventário, desenho do ambiente, custo mensal das ferramentas e roteiro de implantação.",
+              "price": "1200",
+              "priceCurrency": "BRL"
+            },
+            {
+              "@type": "Offer",
+              "name": "Ambiente",
+              "description": "Repositório, domínio e site no ar, staging e produção, Cursor com os três papéis, arquivo inicial no Figma, uma rotina publicada e sessão de handoff.",
+              "price": "6900",
+              "priceCurrency": "BRL"
+            },
+            {
+              "@type": "Offer",
+              "name": "Rotina",
+              "description": "Acompanhamento mensal: ajuste dos agentes e do fluxo, revisão do que está no ar e uma janela de suporte.",
+              "price": "1800",
+              "priceCurrency": "BRL",
+              "priceSpecification": {
+                "@type": "UnitPriceSpecification",
+                "price": "1800",
+                "priceCurrency": "BRL",
+                "unitText": "MON"
+              }
+            }
+          ]
+        }
+      }
+    </script>
+  </head>
+  <!-- data-whatsapp: número com DDI e DDD, só dígitos (ex.: 5512999999999). Vazio faz os botões abrirem o LinkedIn. -->
+  <body class="font-sans antialiased bg-ink text-paper" data-whatsapp="">
+    <a href="#conteudo" class="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-50 focus:bg-copper focus:text-ink focus:px-4 focus:py-2 focus:rounded-full" data-i18n="skip">Ir para o conteúdo</a>
+
+    <header class="sticky top-0 z-30 border-b border-line/80 bg-ink/80 backdrop-blur-md">
+      <div class="mx-auto flex max-w-6xl items-center justify-between gap-4 px-5 py-4 md:px-8">
+        <a href="../#topo" class="font-serif text-lg tracking-tight text-paper md:text-xl">Palloi Hofmann</a>
+
+        <nav class="hidden items-center gap-5 text-sm text-mute lg:gap-7 md:flex" aria-label="Principal">
+          <a href="../#sobre" class="transition hover:text-paper" data-i18n="nav.about">Sobre</a>
+          <a href="../#experiencia" class="transition hover:text-paper" data-i18n="nav.experience">Experiência</a>
+          <a href="../#competencias" class="transition hover:text-paper" data-i18n="nav.skills">Competências</a>
+          <a href="../#projetos" class="transition hover:text-paper" data-i18n="nav.projects">Projetos</a>
+          <a href="../#escrita" class="transition hover:text-paper" data-i18n="nav.writing">Escrita</a>
+          <a href="./" class="text-copper" aria-current="page" data-i18n="nav.consultoria">Consultoria</a>
+          <a href="../#contato" class="transition hover:text-paper" data-i18n="nav.contact">Contato</a>
+        </nav>
+
+        <div class="flex items-center gap-3">
+          <div class="inline-flex rounded-full border border-line p-0.5 text-xs font-medium" role="group" data-i18n-aria="lang.label" aria-label="Idioma">
+            <button type="button" class="rounded-full px-2.5 py-1 text-mute transition hover:text-paper" data-lang-set="pt" aria-pressed="true">PT</button>
+            <button type="button" class="rounded-full px-2.5 py-1 text-mute transition hover:text-paper" data-lang-set="en" aria-pressed="false">EN</button>
+          </div>
+          <button
+            type="button"
+            class="inline-flex h-10 w-10 items-center justify-center rounded-full border border-line text-paper transition hover:border-copper hover:text-copper"
+            data-theme-toggle
+            data-i18n-aria="theme.toLight"
+            data-i18n-title="theme.toLight"
+            aria-label="Ativar modo claro"
+            title="Ativar modo claro"
+          >
+            <svg data-theme-icon="moon" width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M21 14.3A8.5 8.5 0 0 1 9.7 3 7.5 7.5 0 1 0 21 14.3Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/>
+            </svg>
+            <svg data-theme-icon="sun" width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.7"/>
+              <path d="M12 3v1.6M12 19.4V21M4.9 4.9l1.1 1.1M18 18l1.1 1.1M3 12h1.6M19.4 12H21M4.9 19.1 6 18M18 6l1.1-1.1" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+            </svg>
+          </button>
+          <button
+            type="button"
+            class="inline-flex h-10 w-10 items-center justify-center rounded-full border border-line text-paper md:hidden"
+            data-menu-toggle
+            aria-expanded="false"
+            aria-controls="menu-mobile"
+            data-i18n-aria="nav.open"
+            aria-label="Abrir menu"
+          >
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
+              <path d="M3 5h12M3 9h12M3 13h12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <div id="menu-mobile" class="hidden border-t border-line bg-ink px-5 py-5 md:hidden" data-menu-panel>
+        <nav class="flex flex-col gap-4 text-lg" aria-label="Mobile">
+          <a href="../#sobre" data-i18n="nav.about">Sobre</a>
+          <a href="../#experiencia" data-i18n="nav.experience">Experiência</a>
+          <a href="../#competencias" data-i18n="nav.skills">Competências</a>
+          <a href="../#projetos" data-i18n="nav.projects">Projetos</a>
+          <a href="../#escrita" data-i18n="nav.writing">Escrita</a>
+          <a href="./" class="text-copper" aria-current="page" data-i18n="nav.consultoria">Consultoria</a>
+          <a href="../#contato" data-i18n="nav.contact">Contato</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="conteudo">
+      <section id="topo" class="mx-auto max-w-6xl px-5 pb-16 pt-16 md:px-8 md:pb-24 md:pt-[104px]">
+        <p class="text-xs font-semibold uppercase tracking-[0.22em] text-copper" data-i18n="amb.hero.kicker">Consultoria</p>
+        <h1 class="mt-6 max-w-[1080px] font-serif text-5xl leading-[0.92] text-paper sm:text-6xl md:text-7xl lg:text-[88px]" data-i18n="amb.hero.title">Seu ambiente de produto, com um time de IA que publica e entrega.</h1>
+        <p class="mt-6 max-w-[650px] text-lg leading-normal text-mute md:text-xl" data-i18n="amb.hero.lead">Eu monto o repositório, o deploy e os agentes. Você fica com as contas, o domínio e a rotina rodando.</p>
+        <div class="mt-9 flex flex-wrap items-center gap-3">
+          <a href="#pacotes" class="inline-flex h-[52px] items-center justify-center rounded-full border border-copper bg-copper px-[26px] text-sm font-semibold text-ink transition hover:border-copper-dim hover:bg-copper-dim" data-i18n="amb.hero.ctaPackages">Ver pacotes</a>
+          <a href="#metodo" class="inline-flex h-[52px] items-center justify-center rounded-full border border-line px-[26px] text-sm font-semibold text-paper transition hover:border-copper hover:text-copper" data-i18n="amb.hero.ctaMethod">Ver o método</a>
+        </div>
+        <ul class="mt-16 grid border-t border-line sm:grid-cols-3">
+          <li class="flex h-[94px] items-start pt-[26px] text-sm font-medium text-paper" data-i18n="amb.fact1">Site no ar</li>
+          <li class="flex h-[94px] items-start border-t border-line pt-[26px] text-sm font-medium text-paper sm:border-l sm:border-t-0 sm:pl-7" data-i18n="amb.fact2">Staging e produção</li>
+          <li class="flex h-[94px] items-start border-t border-line pt-[26px] text-sm font-medium text-paper sm:border-l sm:border-t-0 sm:pl-7" data-i18n="amb.fact3">Post diário automático</li>
+        </ul>
+      </section>
+
+      <section id="entrega" class="scroll-mt-24 border-t border-line" data-reveal>
+        <div class="mx-auto max-w-6xl px-5 py-20 md:px-8 md:py-32">
+          <div class="mb-12">
+            <p class="text-xs font-semibold uppercase tracking-[0.22em] text-copper" data-i18n="amb.gets.kicker">Entrega</p>
+            <h2 class="mt-5 font-serif text-4xl leading-[0.98] md:text-[58px]" data-i18n="amb.gets.title">O que fica com você</h2>
+          </div>
+          <ul class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            <li class="flex min-h-[224px] flex-col justify-between gap-10 rounded-2xl border border-line bg-ink-soft p-7">
+              <span class="text-xs font-semibold text-copper">01</span>
+              <div class="space-y-2">
+                <h3 class="font-serif text-[25px] leading-[1.1]" data-i18n="amb.gets.i1.title">Site no ar</h3>
+                <p class="text-sm leading-[1.55] text-mute" data-i18n="amb.gets.i1.desc">domínio apontado e página publicada.</p>
+              </div>
+            </li>
+            <li class="flex min-h-[224px] flex-col justify-between gap-10 rounded-2xl border border-line bg-ink-soft p-7">
+              <span class="text-xs font-semibold text-copper">02</span>
+              <div class="space-y-2">
+                <h3 class="font-serif text-[25px] leading-[1.1]" data-i18n="amb.gets.i2.title">Dois ambientes</h3>
+                <p class="text-sm leading-[1.55] text-mute" data-i18n="amb.gets.i2.desc">staging para testar e produção para o público.</p>
+              </div>
+            </li>
+            <li class="flex min-h-[224px] flex-col justify-between gap-10 rounded-2xl border border-line bg-ink-soft p-7">
+              <span class="text-xs font-semibold text-copper">03</span>
+              <div class="space-y-2">
+                <h3 class="font-serif text-[25px] leading-[1.1]" data-i18n="amb.gets.i3.title">Time de agentes</h3>
+                <p class="text-sm leading-[1.55] text-mute" data-i18n="amb.gets.i3.desc">design, social e desenvolvimento na mesma conversa.</p>
+              </div>
+            </li>
+            <li class="flex min-h-[224px] flex-col justify-between gap-10 rounded-2xl border border-line bg-ink-soft p-7">
+              <span class="text-xs font-semibold text-copper">04</span>
+              <div class="space-y-2">
+                <h3 class="font-serif text-[25px] leading-[1.1]" data-i18n="amb.gets.i4.title">Rotina de publicação</h3>
+                <p class="text-sm leading-[1.55] text-mute" data-i18n="amb.gets.i4.desc">imagem, texto e link saindo no horário combinado.</p>
+              </div>
+            </li>
+            <li class="flex min-h-[224px] flex-col justify-between gap-10 rounded-2xl border border-line bg-ink-soft p-7">
+              <span class="text-xs font-semibold text-copper">05</span>
+              <div class="space-y-2">
+                <h3 class="font-serif text-[25px] leading-[1.1]" data-i18n="amb.gets.i5.title">Contas no seu nome</h3>
+                <p class="text-sm leading-[1.55] text-mute" data-i18n="amb.gets.i5.desc">repositório, domínio e ferramentas ficam com você.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="metodo" class="scroll-mt-24 border-t border-line" data-reveal>
+        <div class="mx-auto max-w-6xl px-5 py-20 md:px-8 md:py-32">
+          <div class="mb-12">
+            <p class="text-xs font-semibold uppercase tracking-[0.22em] text-copper" data-i18n="amb.method.kicker">Prova</p>
+            <h2 class="mt-5 font-serif text-4xl leading-[0.98] md:text-[58px]" data-i18n="amb.method.title">O mesmo sistema que eu opero</h2>
+            <p class="mt-6 max-w-[760px] text-base leading-[1.6] text-mute" data-i18n="amb.method.lead">Não é uma equipe humana. São agentes configurados no Cursor. As ferramentas ficam na sua conta. No meu setup, Cursor e Figma ficam na faixa de US$ 40 por mês.</p>
+          </div>
+          <ul class="flex flex-col divide-y divide-line border-y border-line text-[13px] font-medium text-mute md:h-[76px] md:flex-row md:divide-x md:divide-y-0">
+            <li class="flex min-h-14 flex-1 items-center justify-center px-[18px]">GitHub</li>
+            <li class="flex min-h-14 flex-1 items-center justify-center px-[18px]">GitHub Actions</li>
+            <li class="flex min-h-14 flex-1 items-center justify-center px-[18px]">Cursor</li>
+            <li class="flex min-h-14 flex-1 items-center justify-center px-[18px]">Figma</li>
+            <li class="flex min-h-14 flex-1 items-center justify-center px-[18px]" data-i18n="amb.method.social">Instagram e Facebook</li>
+          </ul>
+          <div class="mt-12 flex flex-col gap-6 rounded-2xl border border-line bg-ink-soft p-6 md:min-h-[252px] md:flex-row md:gap-16 md:p-10">
+            <div class="space-y-4 md:w-[300px] md:shrink-0">
+              <p class="text-xs font-semibold uppercase tracking-[0.22em] text-copper" data-i18n="amb.case.kicker">Todo dia às 11h</p>
+              <h3 class="font-serif text-[42px] leading-none">CSS4HTML</h3>
+            </div>
+            <div class="flex flex-1 flex-col gap-6 text-base">
+              <p class="leading-[1.65] text-mute" data-i18n="amb.case.desc">A fanpage gera a imagem, publica o texto e aponta o link para o site. palloi.com.br usa o mesmo fluxo de repositório, domínio e deploy.</p>
+              <a href="https://css4html.com.br" class="w-fit font-semibold text-copper underline underline-offset-4 transition hover:text-copper-dim" target="_blank" rel="noopener noreferrer">css4html.com.br</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="time" class="scroll-mt-24 border-t border-line" data-reveal>
+        <div class="mx-auto max-w-6xl px-5 py-20 md:px-8 md:py-32">
+          <div class="mb-12">
+            <p class="text-xs font-semibold uppercase tracking-[0.22em] text-copper" data-i18n="amb.team.kicker">O time</p>
+            <h2 class="mt-5 font-serif text-4xl leading-[0.98] md:text-[58px]" data-i18n="amb.team.title">Três papéis, uma conversa</h2>
+          </div>
+          <ul class="grid gap-6 md:grid-cols-3">
+            <li class="flex min-h-[214px] flex-col justify-between gap-10 rounded-2xl border border-line bg-ink-soft p-7">
+              <span class="text-xs font-semibold text-copper">01</span>
+              <div class="space-y-2">
+                <h3 class="font-serif text-[25px] leading-[1.1]" data-i18n="amb.team.r1.title">Design</h3>
+                <p class="text-sm leading-[1.55] text-mute" data-i18n="amb.team.r1.desc">estrutura a tela e o visual no Figma.</p>
+              </div>
+            </li>
+            <li class="flex min-h-[214px] flex-col justify-between gap-10 rounded-2xl border border-line bg-ink-soft p-7">
+              <span class="text-xs font-semibold text-copper">02</span>
+              <div class="space-y-2">
+                <h3 class="font-serif text-[25px] leading-[1.1]" data-i18n="amb.team.r2.title">Social</h3>
+                <p class="text-sm leading-[1.55] text-mute" data-i18n="amb.team.r2.desc">escreve o post, gera a imagem e publica.</p>
+              </div>
+            </li>
+            <li class="flex min-h-[214px] flex-col justify-between gap-10 rounded-2xl border border-line bg-ink-soft p-7">
+              <span class="text-xs font-semibold text-copper">03</span>
+              <div class="space-y-2">
+                <h3 class="font-serif text-[25px] leading-[1.1]" data-i18n="amb.team.r3.title">Desenvolvimento</h3>
+                <p class="text-sm leading-[1.55] text-mute" data-i18n="amb.team.r3.desc">mexe no repositório, no site e no deploy.</p>
+              </div>
+            </li>
+          </ul>
+          <p class="mt-12 max-w-[850px] border-t border-line pt-6 text-base leading-[1.6] text-mute" data-i18n="amb.team.note">Eles trabalham na mesma thread. Você pede o resultado. Eu configuro os papéis e te entrego o ambiente funcionando.</p>
+        </div>
+      </section>
+
+      <section id="pacotes" class="scroll-mt-24 border-t border-line" data-reveal>
+        <div class="mx-auto max-w-6xl px-5 py-20 md:px-8 md:py-32">
+          <div class="mb-12">
+            <p class="text-xs font-semibold uppercase tracking-[0.22em] text-copper" data-i18n="amb.pkg.kicker">Pacotes</p>
+            <h2 class="mt-5 font-serif text-4xl leading-[0.98] md:text-[58px]" data-i18n="amb.pkg.title">Escolha por onde começar</h2>
+          </div>
+          <div class="grid gap-6 lg:grid-cols-3">
+            <article class="flex flex-col justify-between gap-10 rounded-2xl border border-line bg-ink-soft p-7 lg:min-h-[650px]">
+              <div class="space-y-6">
+                <div class="space-y-2">
+                  <h3 class="font-serif text-[25px]" data-i18n="amb.p1.name">Mapa</h3>
+                  <p class="font-serif text-[42px] leading-none" data-i18n="amb.p1.price">R$ 1.200</p>
+                  <p class="text-sm leading-normal text-mute" data-i18n="amb.p1.sub">Sessão de 90 minutos.</p>
+                </div>
+                <ul class="space-y-3 text-sm leading-normal text-mute">
+                  <li class="flex items-start gap-3"><span class="mt-2.5 h-px w-2 shrink-0 bg-copper" aria-hidden="true"></span><span data-i18n="amb.p1.f1">inventário do que você já tem</span></li>
+                  <li class="flex items-start gap-3"><span class="mt-2.5 h-px w-2 shrink-0 bg-copper" aria-hidden="true"></span><span data-i18n="amb.p1.f2">desenho do ambiente</span></li>
+                  <li class="flex items-start gap-3"><span class="mt-2.5 h-px w-2 shrink-0 bg-copper" aria-hidden="true"></span><span data-i18n="amb.p1.f3">custo mensal das ferramentas</span></li>
+                  <li class="flex items-start gap-3"><span class="mt-2.5 h-px w-2 shrink-0 bg-copper" aria-hidden="true"></span><span data-i18n="amb.p1.f4">roteiro de implantação</span></li>
+                </ul>
+                <p class="text-xs leading-normal text-mute" data-i18n="amb.p1.note">O valor vira crédito no Ambiente se fechar em 15 dias.</p>
+              </div>
+              <a href="https://www.linkedin.com/in/palloi" class="inline-flex h-[52px] w-full items-center justify-center rounded-full border border-line px-[26px] text-sm font-semibold text-paper transition hover:border-copper hover:text-copper" target="_blank" rel="noopener noreferrer" data-cta="p1" data-i18n="amb.p1.cta">Quero o Mapa</a>
+            </article>
+
+            <article class="flex flex-col justify-between gap-10 rounded-2xl border border-copper bg-ink-soft p-7 lg:min-h-[650px]">
+              <div class="space-y-6">
+                <div class="space-y-2">
+                  <div class="flex items-center justify-between gap-4">
+                    <h3 class="font-serif text-[25px]" data-i18n="amb.p2.name">Ambiente</h3>
+                    <span class="inline-flex h-[26px] items-center rounded-full bg-copper px-2.5 text-[10px] font-bold uppercase text-ink" data-i18n="amb.p2.badge">Principal</span>
+                  </div>
+                  <p class="font-serif text-[42px] leading-none" data-i18n="amb.p2.price">R$ 6.900</p>
+                </div>
+                <ul class="space-y-3 text-sm leading-normal text-mute">
+                  <li class="flex items-start gap-3"><span class="mt-2.5 h-px w-2 shrink-0 bg-copper" aria-hidden="true"></span><span data-i18n="amb.p2.f1">repositório na sua conta</span></li>
+                  <li class="flex items-start gap-3"><span class="mt-2.5 h-px w-2 shrink-0 bg-copper" aria-hidden="true"></span><span data-i18n="amb.p2.f2">domínio e site no ar</span></li>
+                  <li class="flex items-start gap-3"><span class="mt-2.5 h-px w-2 shrink-0 bg-copper" aria-hidden="true"></span><span data-i18n="amb.p2.f3">staging e produção</span></li>
+                  <li class="flex items-start gap-3"><span class="mt-2.5 h-px w-2 shrink-0 bg-copper" aria-hidden="true"></span><span data-i18n="amb.p2.f4">Cursor com os três papéis</span></li>
+                  <li class="flex items-start gap-3"><span class="mt-2.5 h-px w-2 shrink-0 bg-copper" aria-hidden="true"></span><span data-i18n="amb.p2.f5">arquivo inicial no Figma</span></li>
+                  <li class="flex items-start gap-3"><span class="mt-2.5 h-px w-2 shrink-0 bg-copper" aria-hidden="true"></span><span data-i18n="amb.p2.f6">uma rotina publicada</span></li>
+                  <li class="flex items-start gap-3"><span class="mt-2.5 h-px w-2 shrink-0 bg-copper" aria-hidden="true"></span><span data-i18n="amb.p2.f7">sessão de handoff</span></li>
+                </ul>
+              </div>
+              <a href="https://www.linkedin.com/in/palloi" class="inline-flex h-[52px] w-full items-center justify-center rounded-full border border-copper bg-copper px-[26px] text-sm font-semibold text-ink transition hover:border-copper-dim hover:bg-copper-dim" target="_blank" rel="noopener noreferrer" data-cta="p2" data-i18n="amb.p2.cta">Quero o Ambiente</a>
+            </article>
+
+            <article class="flex flex-col justify-between gap-10 rounded-2xl border border-line bg-ink-soft p-7 lg:min-h-[650px]">
+              <div class="space-y-6">
+                <div class="space-y-2">
+                  <h3 class="font-serif text-[25px]" data-i18n="amb.p3.name">Rotina</h3>
+                  <p class="font-serif text-[42px] leading-none" data-i18n="amb.p3.price">R$ 1.800/mês</p>
+                  <p class="text-sm leading-normal text-mute" data-i18n="amb.p3.sub">Mês a mês, cancelável.</p>
+                </div>
+                <ul class="space-y-3 text-sm leading-normal text-mute">
+                  <li class="flex items-start gap-3"><span class="mt-2.5 h-px w-2 shrink-0 bg-copper" aria-hidden="true"></span><span data-i18n="amb.p3.f1">ajuste dos agentes e do fluxo</span></li>
+                  <li class="flex items-start gap-3"><span class="mt-2.5 h-px w-2 shrink-0 bg-copper" aria-hidden="true"></span><span data-i18n="amb.p3.f2">revisão do que está no ar</span></li>
+                  <li class="flex items-start gap-3"><span class="mt-2.5 h-px w-2 shrink-0 bg-copper" aria-hidden="true"></span><span data-i18n="amb.p3.f3">uma janela de suporte</span></li>
+                </ul>
+                <p class="text-xs leading-normal text-mute" data-i18n="amb.p3.note">Não é produção contínua de produto.</p>
+              </div>
+              <a href="https://www.linkedin.com/in/palloi" class="inline-flex h-[52px] w-full items-center justify-center rounded-full border border-line px-[26px] text-sm font-semibold text-paper transition hover:border-copper hover:text-copper" target="_blank" rel="noopener noreferrer" data-cta="p3" data-i18n="amb.p3.cta">Quero a Rotina</a>
+            </article>
+          </div>
+
+          <div class="mt-12 flex justify-center">
+            <div class="flex w-full max-w-[820px] flex-col gap-3 border-t border-line pt-[30px] md:flex-row md:gap-12">
+              <h3 class="font-serif text-[22px] md:w-[180px] md:shrink-0" data-i18n="amb.limits.title">Fora do preço</h3>
+              <p class="flex-1 text-sm leading-[1.65] text-mute" data-i18n="amb.limits.text">assinaturas e domínio no seu cartão; anúncio pago; app, loja ou produto além do site e da rotina combinada.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="encaixe" class="scroll-mt-24 border-t border-line" data-reveal>
+        <div class="mx-auto max-w-6xl px-5 py-20 md:px-8 md:py-32">
+          <div class="mb-12">
+            <p class="text-xs font-semibold uppercase tracking-[0.22em] text-copper" data-i18n="amb.fit.kicker">Encaixe</p>
+            <h2 class="mt-5 font-serif text-4xl leading-[0.98] md:text-[58px]" data-i18n="amb.fit.title">Para quem é</h2>
+          </div>
+          <div class="grid gap-6 md:grid-cols-2">
+            <div class="flex min-h-[274px] flex-col gap-6 rounded-2xl border border-line bg-ink-soft p-6 md:p-8">
+              <h3 class="font-serif text-[30px]" data-i18n="amb.fit.yes.title">É para você</h3>
+              <ul class="space-y-3 text-sm leading-normal text-mute">
+                <li class="flex items-start gap-3"><span class="mt-2.5 h-px w-2 shrink-0 bg-copper" aria-hidden="true"></span><span data-i18n="amb.fit.yes.i1">empreendedor ou pequeno negócio que quer site no ar e publicação sem montar time</span></li>
+                <li class="flex items-start gap-3"><span class="mt-2.5 h-px w-2 shrink-0 bg-copper" aria-hidden="true"></span><span data-i18n="amb.fit.yes.i2">freelancer, criador ou dev que quer o mesmo ambiente para operar sozinho</span></li>
+              </ul>
+            </div>
+            <div class="flex min-h-[274px] flex-col gap-6 rounded-2xl border border-line bg-ink-soft p-6 md:p-8">
+              <h3 class="font-serif text-[30px]" data-i18n="amb.fit.no.title">Não é para você</h3>
+              <ul class="space-y-3 text-sm leading-normal text-mute">
+                <li class="flex items-start gap-3"><span class="mt-2.5 h-px w-2 shrink-0 bg-copper" aria-hidden="true"></span><span data-i18n="amb.fit.no.i1">quem precisa de um app, uma loja ou um produto grande</span></li>
+                <li class="flex items-start gap-3"><span class="mt-2.5 h-px w-2 shrink-0 bg-copper" aria-hidden="true"></span><span data-i18n="amb.fit.no.i2">quem quer uma agência produzindo conteúdo todo mês no lugar dele</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contato" class="scroll-mt-24 border-t border-line" data-reveal>
+        <div class="mx-auto max-w-6xl px-5 py-20 md:px-8 md:py-[144px]">
+          <h2 class="max-w-[850px] font-serif text-5xl leading-[0.96] md:text-6xl lg:text-[72px]" data-i18n="amb.final.title">O ambiente fica no seu nome.</h2>
+          <p class="mt-8 max-w-[620px] text-lg leading-normal text-mute md:text-xl" data-i18n="amb.final.lead">Uma conversa para ver qual pacote encaixa. Sem assinatura escondida.</p>
+          <div class="mt-10">
+            <a href="https://www.linkedin.com/in/palloi" class="inline-flex h-[52px] items-center justify-center rounded-full border border-copper bg-copper px-[26px] text-sm font-semibold text-ink transition hover:border-copper-dim hover:bg-copper-dim" target="_blank" rel="noopener noreferrer" data-cta="generic" data-cta-label>Chamar no WhatsApp</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="scroll-mt-24 border-t border-line">
+      <div class="mx-auto flex max-w-6xl flex-col gap-3 px-5 py-8 text-sm text-mute md:flex-row md:items-center md:justify-between md:px-8">
+        <p><span data-year>2026</span> · <span data-i18n="footer.copy">Palloi Hofmann. Caçapava, São Paulo.</span></p>
+        <p>palloi.com.br</p>
+      </div>
+    </footer>
+
+    <script src="../assets/js/site.js" defer></script>
+  </body>
+</html>

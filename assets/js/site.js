@@ -153,6 +153,95 @@ const translations = {
     "contact.kicker": "Contato",
     "contact.lead":
       "Para oportunidades, parcerias ou uma conversa sobre produto e engenharia, me chame no LinkedIn.",
+    "nav.consultoria": "Consultoria",
+    "home.amb.kicker": "Consultoria",
+    "home.amb.title": "Monto o ambiente que eu mesmo uso.",
+    "home.amb.lead": "Repositório, deploy em staging e produção e um time de agentes no Cursor, com publicação automática. Três pacotes, com preço na página.",
+    "home.amb.link": "Conhecer o ambiente",
+    "amb.doc.title": "Ambiente de produto com time de IA — Palloi Hofmann",
+    "amb.doc.description":
+      "Consultoria para montar o seu ambiente de produto: repositório, deploy em staging e produção, time de agentes no Cursor e rotina de publicação. Pacotes a partir de R$ 1.200.",
+    "amb.hero.kicker": "Consultoria",
+    "amb.hero.title": "Seu ambiente de produto, com um time de IA que publica e entrega.",
+    "amb.hero.lead": "Eu monto o repositório, o deploy e os agentes. Você fica com as contas, o domínio e a rotina rodando.",
+    "amb.hero.ctaPackages": "Ver pacotes",
+    "amb.hero.ctaMethod": "Ver o método",
+    "amb.fact1": "Site no ar",
+    "amb.fact2": "Staging e produção",
+    "amb.fact3": "Post diário automático",
+    "amb.gets.kicker": "Entrega",
+    "amb.gets.title": "O que fica com você",
+    "amb.gets.i1.title": "Site no ar",
+    "amb.gets.i1.desc": "domínio apontado e página publicada.",
+    "amb.gets.i2.title": "Dois ambientes",
+    "amb.gets.i2.desc": "staging para testar e produção para o público.",
+    "amb.gets.i3.title": "Time de agentes",
+    "amb.gets.i3.desc": "design, social e desenvolvimento na mesma conversa.",
+    "amb.gets.i4.title": "Rotina de publicação",
+    "amb.gets.i4.desc": "imagem, texto e link saindo no horário combinado.",
+    "amb.gets.i5.title": "Contas no seu nome",
+    "amb.gets.i5.desc": "repositório, domínio e ferramentas ficam com você.",
+    "amb.method.kicker": "Prova",
+    "amb.method.title": "O mesmo sistema que eu opero",
+    "amb.method.lead": "Não é uma equipe humana. São agentes configurados no Cursor. As ferramentas ficam na sua conta. No meu setup, Cursor e Figma ficam na faixa de US$ 40 por mês.",
+    "amb.method.social": "Instagram e Facebook",
+    "amb.case.kicker": "Todo dia às 11h",
+    "amb.case.desc": "A fanpage gera a imagem, publica o texto e aponta o link para o site. palloi.com.br usa o mesmo fluxo de repositório, domínio e deploy.",
+    "amb.team.kicker": "O time",
+    "amb.team.title": "Três papéis, uma conversa",
+    "amb.team.r1.title": "Design",
+    "amb.team.r1.desc": "estrutura a tela e o visual no Figma.",
+    "amb.team.r2.title": "Social",
+    "amb.team.r2.desc": "escreve o post, gera a imagem e publica.",
+    "amb.team.r3.title": "Desenvolvimento",
+    "amb.team.r3.desc": "mexe no repositório, no site e no deploy.",
+    "amb.team.note": "Eles trabalham na mesma thread. Você pede o resultado. Eu configuro os papéis e te entrego o ambiente funcionando.",
+    "amb.pkg.kicker": "Pacotes",
+    "amb.pkg.title": "Escolha por onde começar",
+    "amb.p1.name": "Mapa",
+    "amb.p1.price": "R$ 1.200",
+    "amb.p1.sub": "Sessão de 90 minutos.",
+    "amb.p1.f1": "inventário do que você já tem",
+    "amb.p1.f2": "desenho do ambiente",
+    "amb.p1.f3": "custo mensal das ferramentas",
+    "amb.p1.f4": "roteiro de implantação",
+    "amb.p1.note": "O valor vira crédito no Ambiente se fechar em 15 dias.",
+    "amb.p1.cta": "Quero o Mapa",
+    "amb.p2.name": "Ambiente",
+    "amb.p2.badge": "Principal",
+    "amb.p2.price": "R$ 6.900",
+    "amb.p2.f1": "repositório na sua conta",
+    "amb.p2.f2": "domínio e site no ar",
+    "amb.p2.f3": "staging e produção",
+    "amb.p2.f4": "Cursor com os três papéis",
+    "amb.p2.f5": "arquivo inicial no Figma",
+    "amb.p2.f6": "uma rotina publicada",
+    "amb.p2.f7": "sessão de handoff",
+    "amb.p2.cta": "Quero o Ambiente",
+    "amb.p3.name": "Rotina",
+    "amb.p3.price": "R$ 1.800/mês",
+    "amb.p3.sub": "Mês a mês, cancelável.",
+    "amb.p3.f1": "ajuste dos agentes e do fluxo",
+    "amb.p3.f2": "revisão do que está no ar",
+    "amb.p3.f3": "uma janela de suporte",
+    "amb.p3.note": "Não é produção contínua de produto.",
+    "amb.p3.cta": "Quero a Rotina",
+    "amb.limits.title": "Fora do preço",
+    "amb.limits.text": "assinaturas e domínio no seu cartão; anúncio pago; app, loja ou produto além do site e da rotina combinada.",
+    "amb.fit.kicker": "Encaixe",
+    "amb.fit.title": "Para quem é",
+    "amb.fit.yes.title": "É para você",
+    "amb.fit.yes.i1": "empreendedor ou pequeno negócio que quer site no ar e publicação sem montar time",
+    "amb.fit.yes.i2": "freelancer, criador ou dev que quer o mesmo ambiente para operar sozinho",
+    "amb.fit.no.title": "Não é para você",
+    "amb.fit.no.i1": "quem precisa de um app, uma loja ou um produto grande",
+    "amb.fit.no.i2": "quem quer uma agência produzindo conteúdo todo mês no lugar dele",
+    "amb.final.title": "O ambiente fica no seu nome.",
+    "amb.final.lead": "Uma conversa para ver qual pacote encaixa. Sem assinatura escondida.",
+    "amb.final.cta": "Chamar no WhatsApp",
+    "amb.final.ctaAlt": "Chamar no LinkedIn",
+    "amb.msg.generic": "Olá, Palloi! Quero conversar sobre o ambiente.",
+    "amb.msg.package": "Olá, Palloi! Tenho interesse no pacote {name}.",
     "footer.copy": "Palloi Hofmann. Caçapava, São Paulo.",
   },
   en: {
@@ -309,6 +398,95 @@ const translations = {
     "contact.kicker": "Contact",
     "contact.lead":
       "For opportunities, partnerships, or a conversation about product and engineering, reach out on LinkedIn.",
+    "nav.consultoria": "Consulting",
+    "home.amb.kicker": "Consulting",
+    "home.amb.title": "I set up the environment I use myself.",
+    "home.amb.lead": "Repository, staging and production deploys, and an agent team in Cursor, with automatic publishing. Three packages, with prices on the page.",
+    "home.amb.link": "See the environment",
+    "amb.doc.title": "Product environment with an AI team — Palloi Hofmann",
+    "amb.doc.description":
+      "Consulting to set up your product environment: repository, staging and production deploys, an agent team in Cursor, and a publishing routine. Packages from R$ 1,200.",
+    "amb.hero.kicker": "Consulting",
+    "amb.hero.title": "Your product environment, with an AI team that publishes and delivers.",
+    "amb.hero.lead": "I set up the repository, the deploy, and the agents. You keep the accounts, the domain, and the routine running.",
+    "amb.hero.ctaPackages": "See packages",
+    "amb.hero.ctaMethod": "See the method",
+    "amb.fact1": "Site live",
+    "amb.fact2": "Staging and production",
+    "amb.fact3": "Automatic daily post",
+    "amb.gets.kicker": "Delivery",
+    "amb.gets.title": "What stays with you",
+    "amb.gets.i1.title": "Site live",
+    "amb.gets.i1.desc": "domain pointed and page published.",
+    "amb.gets.i2.title": "Two environments",
+    "amb.gets.i2.desc": "staging to test and production for the public.",
+    "amb.gets.i3.title": "Agent team",
+    "amb.gets.i3.desc": "design, social, and development in the same conversation.",
+    "amb.gets.i4.title": "Publishing routine",
+    "amb.gets.i4.desc": "image, text, and link going out at the agreed time.",
+    "amb.gets.i5.title": "Accounts in your name",
+    "amb.gets.i5.desc": "repository, domain, and tools stay with you.",
+    "amb.method.kicker": "Proof",
+    "amb.method.title": "The same system I run",
+    "amb.method.lead": "Not a human team. These are agents configured in Cursor. The tools stay on your account. In my setup, Cursor and Figma cost about US$ 40 a month.",
+    "amb.method.social": "Instagram and Facebook",
+    "amb.case.kicker": "Every day at 11 AM",
+    "amb.case.desc": "The fan page generates the image, publishes the text, and points the link to the site. palloi.com.br uses the same flow of repository, domain, and deploy.",
+    "amb.team.kicker": "The team",
+    "amb.team.title": "Three roles, one conversation",
+    "amb.team.r1.title": "Design",
+    "amb.team.r1.desc": "structures the screen and the look in Figma.",
+    "amb.team.r2.title": "Social",
+    "amb.team.r2.desc": "writes the post, generates the image, and publishes.",
+    "amb.team.r3.title": "Development",
+    "amb.team.r3.desc": "works on the repository, the site, and the deploy.",
+    "amb.team.note": "They work in the same thread. You ask for the result. I configure the roles and hand you a working environment.",
+    "amb.pkg.kicker": "Packages",
+    "amb.pkg.title": "Pick where to start",
+    "amb.p1.name": "Map",
+    "amb.p1.price": "R$ 1,200",
+    "amb.p1.sub": "90-minute session.",
+    "amb.p1.f1": "inventory of what you already have",
+    "amb.p1.f2": "environment design",
+    "amb.p1.f3": "monthly cost of the tools",
+    "amb.p1.f4": "rollout plan",
+    "amb.p1.note": "The amount becomes credit toward the Environment if you sign within 15 days.",
+    "amb.p1.cta": "I want the Map",
+    "amb.p2.name": "Environment",
+    "amb.p2.badge": "Main",
+    "amb.p2.price": "R$ 6,900",
+    "amb.p2.f1": "repository on your account",
+    "amb.p2.f2": "domain and site live",
+    "amb.p2.f3": "staging and production",
+    "amb.p2.f4": "Cursor with the three roles",
+    "amb.p2.f5": "starter file in Figma",
+    "amb.p2.f6": "one published routine",
+    "amb.p2.f7": "handoff session",
+    "amb.p2.cta": "I want the Environment",
+    "amb.p3.name": "Routine",
+    "amb.p3.price": "R$ 1,800/month",
+    "amb.p3.sub": "Month to month, cancel anytime.",
+    "amb.p3.f1": "tuning of the agents and the flow",
+    "amb.p3.f2": "review of what is live",
+    "amb.p3.f3": "a support window",
+    "amb.p3.note": "It is not ongoing product development.",
+    "amb.p3.cta": "I want the Routine",
+    "amb.limits.title": "Outside the price",
+    "amb.limits.text": "subscriptions and domain on your card; paid ads; an app, store, or product beyond the site and the agreed routine.",
+    "amb.fit.kicker": "Fit",
+    "amb.fit.title": "Who it's for",
+    "amb.fit.yes.title": "It's for you",
+    "amb.fit.yes.i1": "entrepreneur or small business that wants a live site and publishing without building a team",
+    "amb.fit.yes.i2": "freelancer, creator, or dev who wants the same environment to run solo",
+    "amb.fit.no.title": "It's not for you",
+    "amb.fit.no.i1": "anyone who needs an app, a store, or a large product",
+    "amb.fit.no.i2": "anyone who wants an agency producing content every month in their place",
+    "amb.final.title": "The environment stays in your name.",
+    "amb.final.lead": "A conversation to see which package fits. No hidden subscription.",
+    "amb.final.cta": "Message on WhatsApp",
+    "amb.final.ctaAlt": "Message on LinkedIn",
+    "amb.msg.generic": "Hi Palloi! I'd like to talk about the environment.",
+    "amb.msg.package": "Hi Palloi! I'm interested in the {name} package.",
     "footer.copy": "Palloi Hofmann. Caçapava, São Paulo.",
   },
 };
@@ -325,16 +503,36 @@ const getLang = () => {
 
 const setDocumentMeta = (lang) => {
   const t = translations[lang];
+  const prefix = document.documentElement.dataset.doc ? `${document.documentElement.dataset.doc}.` : "";
+  const docTitle = t[`${prefix}doc.title`] || t["doc.title"];
+  const docDescription = t[`${prefix}doc.description`] || t["doc.description"];
   document.documentElement.lang = lang === "en" ? "en" : "pt-BR";
-  document.title = t["doc.title"];
+  document.title = docTitle;
   const description = document.querySelector('meta[name="description"]');
-  if (description) description.setAttribute("content", t["doc.description"]);
+  if (description) description.setAttribute("content", docDescription);
   const ogTitle = document.querySelector('meta[property="og:title"]');
-  if (ogTitle) ogTitle.setAttribute("content", t["doc.title"]);
+  if (ogTitle) ogTitle.setAttribute("content", docTitle);
   const ogDescription = document.querySelector('meta[property="og:description"]');
-  if (ogDescription) ogDescription.setAttribute("content", t["doc.description"]);
+  if (ogDescription) ogDescription.setAttribute("content", docDescription);
   const ogLocale = document.querySelector('meta[property="og:locale"]');
   if (ogLocale) ogLocale.setAttribute("content", lang === "en" ? "en_US" : "pt_BR");
+};
+
+const linkedinUrl = "https://www.linkedin.com/in/palloi";
+
+const updateContactLinks = (lang) => {
+  const t = translations[lang];
+  const number = (document.body.dataset.whatsapp || "").replace(/\D/g, "");
+  document.querySelectorAll("[data-cta]").forEach((el) => {
+    const key = el.getAttribute("data-cta");
+    const message = key === "generic"
+      ? t["amb.msg.generic"]
+      : t["amb.msg.package"].replace("{name}", t[`amb.${key}.name`]);
+    el.setAttribute("href", number ? `https://wa.me/${number}?text=${encodeURIComponent(message)}` : linkedinUrl);
+  });
+  document.querySelectorAll("[data-cta-label]").forEach((el) => {
+    el.textContent = t[number ? "amb.final.cta" : "amb.final.ctaAlt"];
+  });
 };
 
 const applyTranslations = (lang) => {
@@ -352,6 +550,7 @@ const applyTranslations = (lang) => {
     if (t[key]) el.setAttribute("title", t[key]);
   });
   setDocumentMeta(lang);
+  updateContactLinks(lang);
   document.querySelectorAll("[data-lang-set]").forEach((btn) => {
     const active = btn.getAttribute("data-lang-set") === lang;
     btn.setAttribute("aria-pressed", String(active));
@@ -448,7 +647,9 @@ const setupReveal = () => {
 };
 
 const setupScrollSpy = () => {
-  const links = [...document.querySelectorAll("[data-nav-link]")];
+  const links = [...document.querySelectorAll("[data-nav-link]")].filter((link) =>
+    link.getAttribute("href").startsWith("#")
+  );
   const sections = links
     .map((link) => document.querySelector(link.getAttribute("href")))
     .filter(Boolean);

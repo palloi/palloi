@@ -14,16 +14,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="index,follow">
     <meta name="theme-color" content="#0c0b0a">
-    <title>Palloi Hofmann — Tech Manager, Tech Lead e Developer</title>
-    <meta name="description" content="Palloi Hofmann é um profissional T-shaped, especialista em front-end, com trajetória em liderança técnica, gestão de pessoas e desenvolvimento de software.">
+    <title>Palloi Hofmann — Senior Full Stack Engineer e AI Engineer</title>
+    <meta name="description" content="Palloi Hofmann é engenheiro de software com 19 anos construindo produtos web, do front-end ao back-end, e aplica IA no desenvolvimento. Busca vagas de Engenharia Full Stack sênior e de Engenharia de IA.">
     <link rel="canonical" href="https://palloi.com.br/">
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 
     <meta property="og:type" content="website">
     <meta property="og:locale" content="pt_BR">
     <meta property="og:locale:alternate" content="en_US">
-    <meta property="og:title" content="Palloi Hofmann — Tech Manager, Tech Lead e Developer">
-    <meta property="og:description" content="Palloi Hofmann é um profissional T-shaped, especialista em front-end, com trajetória em liderança técnica, gestão de pessoas e desenvolvimento de software.">
+    <meta property="og:title" content="Palloi Hofmann — Senior Full Stack Engineer e AI Engineer">
+    <meta property="og:description" content="Palloi Hofmann é engenheiro de software com 19 anos construindo produtos web, do front-end ao back-end, e aplica IA no desenvolvimento. Busca vagas de Engenharia Full Stack sênior e de Engenharia de IA.">
     <meta property="og:url" content="https://palloi.com.br/">
     <meta name="twitter:card" content="summary">
 
@@ -148,13 +148,47 @@
           transition: none;
         }
       }
+
+      @media print {
+        [data-reveal] {
+          opacity: 1 !important;
+          transform: none !important;
+        }
+
+        .grid {
+          display: block !important;
+        }
+
+        #escrita,
+        a[href="#escrita"] {
+          display: none !important;
+        }
+
+        div:has(> h2:last-child),
+        article,
+        #formacao li,
+        #competencias li,
+        #experiencia li,
+        #projetos a,
+        #competencias .grid > div {
+          break-inside: avoid;
+          page-break-inside: avoid;
+        }
+
+        div:has(> h2:last-child) {
+          break-after: avoid;
+          page-break-after: avoid;
+          padding-bottom: 14rem;
+          margin-bottom: -14rem;
+        }
+      }
     </style>
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "Person",
         "name": "Palloi Hofmann",
-        "jobTitle": "Tech Manager, Tech Lead, Developer",
+        "jobTitle": "Senior Full Stack Engineer, AI Engineer",
         "url": "https://palloi.com.br/",
         "address": {
           "@type": "PostalAddress",
@@ -240,9 +274,9 @@
       <section id="topo" class="mx-auto max-w-6xl px-5 pb-20 pt-16 md:px-8 md:pb-28 md:pt-24">
         <p class="text-sm uppercase tracking-[0.22em] text-copper" data-i18n="hero.location">Caçapava, São Paulo, Brasil</p>
         <h1 class="mt-5 max-w-4xl font-serif text-5xl leading-[1.05] text-paper sm:text-6xl md:text-7xl lg:text-8xl">Palloi Hofmann</h1>
-        <p class="mt-6 max-w-2xl text-lg text-mute md:text-xl" data-i18n="hero.role">Tech Manager — Tech Lead — Developer</p>
+        <p class="mt-6 max-w-3xl text-lg text-mute md:text-xl" data-i18n="hero.role">Senior Full Stack Engineer — AI Engineer</p>
         <p class="mt-6 max-w-2xl text-base leading-relaxed text-paper/90 md:text-lg" data-i18n="hero.lead">
-          Profissional T-shaped, especialista em front-end, com back-end, liderança técnica e gestão de pessoas. Quase duas décadas construindo produtos e times de engenharia.
+          19 anos construindo produtos web, do front-end ao back-end, com React, Node.js, Design Systems e IA no fluxo de engenharia.
         </p>
         <div class="mt-10 flex flex-wrap items-center gap-3">
           <a href="https://www.linkedin.com/in/palloi" class="inline-flex items-center rounded-full bg-copper px-5 py-2.5 text-sm font-semibold text-ink transition hover:bg-copper-dim" target="_blank" rel="noopener noreferrer" data-i18n-title="hero.tip.linkedin" title="Perfil profissional no LinkedIn">LinkedIn</a>
@@ -275,8 +309,11 @@
             <h2 class="mt-3 font-serif text-4xl" data-i18n="about.title">Sobre</h2>
           </div>
           <div class="max-w-2xl space-y-5 text-lg leading-relaxed text-paper/90">
-            <p data-i18n="about.p1">Olá. Sou um profissional T-shaped: especialista em front-end, com conhecimento sólido de back-end e uma trajetória em desenvolvimento de software, liderança técnica e gestão de pessoas.</p>
-            <p data-i18n="about.p2">Recentemente encerrei um ciclo como Software Engineer na mLabs, depois de passagens como Engineering Manager e Tech Lead. Já liderei times, desenhei design systems e entreguei produtos web em empresas como Onze, Locaweb e na produtora que fundei, a CSS4HTML.</p>
+            <p data-i18n="about.p1">Sou engenheiro de software com 19 anos de experiência construindo produtos web, do front-end ao back-end, e hoje aplicando IA no desenvolvimento e em funcionalidades de produto.</p>
+            <p data-i18n="about.p2">Minha base é front-end, com React, Web Components e Design Systems. Trabalho também no back-end com Node.js, Ruby on Rails, PostgreSQL, MongoDB, Docker e GitHub Actions. Contribuí com a manutenção e a evolução do Locaweb Style, framework de interface open source da Locaweb, e escrevi artigos técnicos para o Tableless.</p>
+            <p data-i18n="about.p3">Também atuei como Tech Lead e Engineering Manager na mLabs e na Onze, liderando times e cuidando de arquitetura, qualidade e entrega. Por isso, entendo de código e também de como um time entrega bem.</p>
+            <p data-i18n="about.p4">No último ano, montei um fluxo de desenvolvimento com IA usando o Cursor, integrado ao Jira (Rovo), GitHub, Figma, Teams, Bugsnag e New Relic. Rotinas automáticas duas vezes por dia cruzavam meus cards com os pull requests, analisavam os comentários de code review e me mandavam no Teams as sugestões de melhoria e as pendências de revisão, além de um plano do dia hora a hora. O Cursor lia essas mensagens, aplicava sozinho os ajustes pequenos e fazia o commit. Nas tarefas novas, ele partia do card do Jira, validava a descrição, implementava o layout direto do Figma e preparava o pull request para minha revisão. Também gerava um resumo do que eu entreguei e revisei para a daily.</p>
+            <p data-i18n="about.p5">Agora estou focado em vagas de Engenharia Full Stack sênior e de Engenharia de IA, no modelo remoto, híbrido ou presencial.</p>
           </div>
         </div>
       </section>
@@ -300,7 +337,12 @@
                     <span data-i18n="exp.mlabs.r1.role">Senior Software Engineer · Team Chat</span>
                     <span class="text-sm text-mute" data-i18n="exp.mlabs.r1.dates">dez 2025 — set 2026</span>
                   </div>
-                  <p class="text-sm leading-relaxed text-mute" data-i18n="exp.mlabs.r1.desc">Full stack com Node.js e Ruby, focado no front-end do mLabs Chat: inbox centralizado, interações automáticas e gestão de contatos.</p>
+                  <ul class="list-disc space-y-1 pl-4 text-sm leading-relaxed text-mute">
+                    <li data-i18n="exp.mlabs.r1.d1">Criei um fluxo de desenvolvimento com IA (Cursor, Jira Rovo, GitHub, Figma, Teams), automatizando a triagem de code review, os ajustes em pull requests e o planejamento do dia.</li>
+                    <li data-i18n="exp.mlabs.r1.d2">Implementei telas a partir do Figma com IA, mantendo o Design System e os Web Components.</li>
+                    <li data-i18n="exp.mlabs.r1.d3">Integrei sinais de produção (Bugsnag, New Relic) ao fluxo para investigar erros mais rápido.</li>
+                  </ul>
+                  <p class="text-sm text-mute" data-i18n="exp.mlabs.r1.stack">React · Web Components · Design System · Node.js · Ruby</p>
                 </li>
                 <li class="space-y-2">
                   <div class="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between">
@@ -463,8 +505,10 @@
       <section id="formacao" class="scroll-mt-24 border-t border-line" data-reveal>
         <div class="mx-auto grid max-w-6xl gap-16 px-5 py-20 md:grid-cols-2 md:px-8 md:py-24">
           <div>
-            <p class="text-xs uppercase tracking-[0.22em] text-copper" data-i18n="edu.kicker">Estudos</p>
-            <h2 class="mt-3 font-serif text-4xl" data-i18n="edu.title">Formação</h2>
+            <div>
+              <p class="text-xs uppercase tracking-[0.22em] text-copper" data-i18n="edu.kicker">Estudos</p>
+              <h2 class="mt-3 font-serif text-4xl" data-i18n="edu.title">Formação</h2>
+            </div>
             <ul class="mt-10 space-y-8">
               <li>
                 <p class="text-lg font-medium">FIAP</p>
@@ -484,23 +528,40 @@
             </ul>
           </div>
           <div>
-            <p class="text-xs uppercase tracking-[0.22em] text-copper" data-i18n="certs.issuer">Escola Conquer</p>
-            <h2 class="mt-3 font-serif text-4xl" data-i18n="certs.title">Certificações</h2>
+            <div>
+              <p class="text-xs uppercase tracking-[0.22em] text-copper" data-i18n="certs.issuer">Credenciais</p>
+              <h2 class="mt-3 font-serif text-4xl" data-i18n="certs.title">Certificações</h2>
+            </div>
             <ul class="mt-10 space-y-8">
               <li>
-                <p class="text-lg font-medium" data-i18n="certs.c1">Escutatória</p>
-                <p class="mt-1 text-sm text-mute" data-i18n="certs.c1.dates">jun 2025</p>
+                <p class="text-lg font-medium" data-i18n="certs.c1">Certificado de Qualificação Profissional em Gestão de Projetos Ágeis de Tecnologia da Informação</p>
+                <p class="mt-1 text-sm text-mute"><span data-i18n="certs.c1.meta">FIAP · dez 2025</span> · <span data-i18n="certs.c1.id">Credencial 33C41C8D</span></p>
+                <a class="mt-2 inline-block text-sm text-copper hover:underline" href="https://www.fiap.com.br/consultadocumento" target="_blank" rel="noopener noreferrer" data-i18n="certs.view">Ver certificado</a>
+              </li>
+              <li>
+                <p class="text-lg font-medium" data-i18n="certs.c2">Certificado de Qualificação Profissional em Governança de TI</p>
+                <p class="mt-1 text-sm text-mute"><span data-i18n="certs.c2.meta">FIAP · jul 2026</span> · <span data-i18n="certs.c2.id">Credencial C76BD8C6</span></p>
+                <a class="mt-2 inline-block text-sm text-copper hover:underline" href="https://www.fiap.com.br/consultadocumento" target="_blank" rel="noopener noreferrer" data-i18n="certs.view">Ver certificado</a>
+              </li>
+              <li>
+                <p class="text-lg font-medium" data-i18n="certs.c3">GS 05/2026 - SPACE CONNECT</p>
+                <p class="mt-1 text-sm text-mute" data-i18n="certs.c3.meta">FIAP · jul 2026</p>
+                <a class="mt-2 inline-block text-sm text-copper hover:underline" href="https://on.fiap.com.br/pluginfile.php/88851/local_certificadoglobalsolution/certificadogsgerado/88851/certificado_6a85ec72102d8.png" target="_blank" rel="noopener noreferrer" data-i18n="certs.view">Ver certificado</a>
+              </li>
+              <li>
+                <p class="text-lg font-medium" data-i18n="certs.c4">Escutatória</p>
+                <p class="mt-1 text-sm text-mute" data-i18n="certs.c4.meta">Escola Conquer · jun 2025</p>
                 <a class="mt-2 inline-block text-sm text-copper hover:underline" href="https://conquerplus.com.br/certificates/b1e70391-43a6-42d1-a38a-c4c63f71ac0b" target="_blank" rel="noopener noreferrer" data-i18n="certs.view">Ver certificado</a>
               </li>
               <li>
-                <p class="text-lg font-medium" data-i18n="certs.c2">Feedback e Feedforward: transforme conversas difíceis em resultados</p>
-                <p class="mt-1 text-sm text-mute" data-i18n="certs.c2.dates">jan 2025</p>
-                <a class="mt-2 inline-block text-sm text-copper hover:underline" href="https://conquerplus.com.br/certificates/5f6e0954-6c2f-4ba5-8895-0cc4b9e286b0" target="_blank" rel="noopener noreferrer" data-i18n="certs.view">Ver certificado</a>
+                <p class="text-lg font-medium" data-i18n="certs.c5">FOCO: habilidades essenciais para desbloquear seu potencial</p>
+                <p class="mt-1 text-sm text-mute" data-i18n="certs.c5.meta">Escola Conquer · jan 2025</p>
+                <a class="mt-2 inline-block text-sm text-copper hover:underline" href="https://conquerplus.com.br/certificates/9863e58f-d6c7-45dc-ab7e-ecaf16efbd4c" target="_blank" rel="noopener noreferrer" data-i18n="certs.view">Ver certificado</a>
               </li>
               <li>
-                <p class="text-lg font-medium" data-i18n="certs.c3">FOCO: habilidades essenciais para desbloquear seu potencial</p>
-                <p class="mt-1 text-sm text-mute" data-i18n="certs.c3.dates">jan 2025</p>
-                <a class="mt-2 inline-block text-sm text-copper hover:underline" href="https://conquerplus.com.br/certificates/9863e58f-d6c7-45dc-ab7e-ecaf16efbd4c" target="_blank" rel="noopener noreferrer" data-i18n="certs.view">Ver certificado</a>
+                <p class="text-lg font-medium" data-i18n="certs.c6">Feedback e Feedforward: transforme conversas difíceis em resultados</p>
+                <p class="mt-1 text-sm text-mute" data-i18n="certs.c6.meta">Escola Conquer · jan 2025</p>
+                <a class="mt-2 inline-block text-sm text-copper hover:underline" href="https://conquerplus.com.br/certificates/5f6e0954-6c2f-4ba5-8895-0cc4b9e286b0" target="_blank" rel="noopener noreferrer" data-i18n="certs.view">Ver certificado</a>
               </li>
             </ul>
           </div>
@@ -622,8 +683,10 @@
 
       <section id="contato" class="scroll-mt-24 border-t border-line" data-reveal>
         <div class="mx-auto max-w-6xl px-5 py-20 md:px-8 md:py-28">
-          <p class="text-xs uppercase tracking-[0.22em] text-copper" data-i18n="contact.kicker">Contato</p>
-          <h2 class="mt-3 max-w-2xl font-serif text-5xl md:text-6xl" data-i18n="contact.title">Vamos conversar</h2>
+          <div>
+            <p class="text-xs uppercase tracking-[0.22em] text-copper" data-i18n="contact.kicker">Contato</p>
+            <h2 class="mt-3 max-w-2xl font-serif text-5xl md:text-6xl" data-i18n="contact.title">Vamos conversar</h2>
+          </div>
           <p class="mt-6 max-w-xl text-lg text-mute" data-i18n="contact.lead">Para oportunidades, parcerias ou uma conversa sobre produto e engenharia, me chame no LinkedIn.</p>
           <div class="mt-10 flex flex-wrap gap-3">
             <a href="https://www.linkedin.com/in/palloi" class="inline-flex items-center rounded-full bg-copper px-5 py-2.5 text-sm font-semibold text-ink transition hover:bg-copper-dim" target="_blank" rel="noopener noreferrer">LinkedIn</a>
